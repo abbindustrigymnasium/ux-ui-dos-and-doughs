@@ -15,7 +15,11 @@
         version = "0.0.0";
         python-with-fastapi = pkgs.python311.withPackages (po:
           with po; [
+            bcrypt
+            databases
             fastapi
+            passlib
+            pydantic
             sqlalchemy
             uvicorn
           ]);
