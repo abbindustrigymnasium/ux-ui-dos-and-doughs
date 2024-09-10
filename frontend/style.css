@@ -1,0 +1,152 @@
+:root {
+    --background-color: #FFF8F0;
+    --graphics-color: #1F1F1F;
+    --dimmed-graphics-color: rgba(31, 31, 31, 0.25);
+
+    --img-border-radious: 32px;
+}
+
+/*   Basic CSS reset   */
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*   Font   */
+@font-face {
+    font-family: 'Redaction';
+    src: url(./fonts/Redaction-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Redaction';
+    src: url(./fonts/Redaction-Bold.woff2);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Redaction';
+    src: url(./fonts/Redaction-Italic.woff2);
+    font-weight: 400;
+    font-style: italic;
+}
+
+/*   Styling   */
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: var(--graphics-color);
+    color: var(--background-color);
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: 'Redaction', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: var(--main-text-color);
+    margin-inline: 2em;
+    margin-top: 2em;
+}
+
+.lato {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+img {
+    user-select: none;
+}
+
+.major-img-styling {
+    box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.1);
+    border-radius: var(--img-border-radious);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6em;
+}
+
+.navlinks {
+    display: flex;
+    column-gap: 1em;
+}
+
+.nav-deco-line {
+    width: 4px;
+    height: 24px;
+    background-color: var(--dimmed-graphics-color);
+}
+
+.right-navbar {
+    display: flex;
+    align-items: center;
+    column-gap: 2em;
+}
+
+.nav-logo {
+    width: 210px;
+}
+
+.account-logo {
+    width: 16px;
+}
+
+.account-nav-wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5em;
+}
+
+main {
+    margin-inline: 2em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+h1 {
+    font-size: 2rem;
+    display: inline-block;
+}
+
+.redacted-hero-deco {
+    width: 160px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero-img {
+    width: 100%;
+}
+
+.img-overlay {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
