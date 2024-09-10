@@ -17,6 +17,7 @@
           with po; [
             fastapi
             sqlalchemy
+            uvicorn
           ]);
       in rec {
         devShells = {
