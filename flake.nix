@@ -32,10 +32,8 @@
           };
           frontend = pkgs.mkShell {
             packages = with pkgs; [
-              # Language-specific packages
-              nodePackages.npm
-              nodejs_22
-              typescript
+              nodePackages.prettier
+              caddy
 
               # Development utilities
               bat
