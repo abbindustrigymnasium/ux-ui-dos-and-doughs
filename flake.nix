@@ -34,6 +34,9 @@
             packages = with pkgs; [
               nodePackages.prettier
               caddy
+              nodejs_22
+              nodePackages.npm
+              typescript
 
               # Development utilities
               bat
