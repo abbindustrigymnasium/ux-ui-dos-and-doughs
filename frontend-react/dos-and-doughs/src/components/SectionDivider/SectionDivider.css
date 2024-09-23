@@ -1,0 +1,36 @@
+.section-divider {
+    position: relative;
+    height: 10px;
+    margin-bottom: 1.2em;
+}
+
+/* Text */
+.section-divider::after {
+    content: "do's & doughs";
+    font-family: "Public Sans", sans-serif;
+    color: var(--graphics-color-light);
+    font-size: 0.6rem;
+    opacity: 100%;
+    position: absolute;
+    top: 0.25em;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 5s steps(20, end) infinite;
+}
+
+/* 'Fake' typewriting animation */
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 75px;
+    }
+    75% {
+        width: 0;
+    }
+    100% {
+        width: 0;
+    }
+}

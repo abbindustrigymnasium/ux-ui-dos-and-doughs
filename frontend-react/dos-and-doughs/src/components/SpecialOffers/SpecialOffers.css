@@ -1,0 +1,51 @@
+#special-offers {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 24em;
+}
+
+.special-offers-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4em;
+}
+
+.script-text {
+    margin-top: 2em;
+}
+
+.offer-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 12em;
+}
+
+.offer-card {
+    position: relative;
+}
+
+.offer-img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 840px;
+}
+
+.img-overlay {
+    position: absolute;
+    z-index: 1;
+    padding-top: 4em;
+    padding-left: 3em;
+}
+
+.img-overlay p {
+    margin-bottom: 1.5em;
+}
+
+.offer-shoplink {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+    align-items: center;
+}
