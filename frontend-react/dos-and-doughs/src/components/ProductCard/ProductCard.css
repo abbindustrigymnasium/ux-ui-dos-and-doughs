@@ -1,0 +1,27 @@
+.product-card {
+    border-radius: 32px;
+    margin: 25px;
+    height: 250px;
+    width: auto;
+    display: flex;
+    background-color: black; /* Fallback */
+    background-position: center; /* Center the image */
+    background-size: cover;
+    box-shadow: inset 0px 50px 15px rgba(0, 0, 0,.6);
+}
+
+.cake-info {
+    margin: 1em;
+    color: white;
+}
+
+.cake-title {
+    text-align: left;
+    font-size: 40px;
+    justify-content: left;
+}
+
+.cake-subtitle {
+    color: white;
+    text-align: left;
+}

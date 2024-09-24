@@ -2,104 +2,104 @@
     {
         "cake_description": "Treat yourself to a slice of pure bliss with our chocolate cake, a campus favorite! This cake is made with the finest cocoa and baked to perfection for a moist, fudgy texture that\u2019s hard to resist. Each layer is generously frosted with a velvety chocolate ganache that melts in your mouth. Whether you're celebrating a special occasion or just need a sweet pick-me-up between classes, our chocolate cake is the ultimate comfort dessert that will satisfy your cravings and leave you wanting more.",
         "id": 1,
-        "image_url": "/images/chocolate-cake.webp",
-        "name_of_cake": "Chocolate Cake",
+        "imageUrl": "/images/chocolate-cake.webp",
+        "title": "Chocolate Cake",
         "price": 19,
         "subtitle": "Indulge in our rich, decadent chocolate cake\u2014perfectly moist and topped with a luscious chocolate ganache."
     },
     {
         "cake_description": "Elevate your snacking game with our mini donuts\u2014adorable, bite-sized treats that pack a punch of flavor! These soft, fluffy donuts are lightly glazed to add just the right amount of sweetness without overwhelming your taste buds. Ideal for a quick study break or a sweet indulgence during a busy day, they come in a variety of tempting flavors that make them perfect for sharing with friends or enjoying all by yourself. Pop them in your bag or grab a few from the display; these mini donuts are the perfect way to brighten your day!",
         "id": 2,
-        "image_url": "/images/mini-donuts.webp",
-        "name_of_cake": "Mini Donuts",
+        "imageUrl": "/images/mini-donuts.webp",
+        "title": "Mini Donuts",
         "price": 12,
         "subtitle": "Enjoy a bite-sized burst of sweetness with our mini donuts, lightly glazed and perfect for a quick snack between classes."
     },
     {
         "cake_description": "Discover the delightful combination of flavors in our carrot cake, a true classic that\u2019s sure to become your new favorite. Each slice is packed with finely grated carrots and a blend of warming spices, creating a moist and tender cake that\u2019s both satisfying and delicious. The cream cheese frosting adds a creamy, tangy contrast that perfectly complements the cake\u2019s sweetness. Topped with a sprinkle of chopped nuts, this carrot cake is a wholesome treat that\u2019s perfect for a study break or a well-deserved reward after a long day of classes. Enjoy a slice and let the rich flavors and comforting textures bring a touch of homemade goodness to your campus life.",
         "id": 3,
-        "image_url": "/images/carrot-cake.webp",
-        "name_of_cake": "Carrot Cake",
+        "imageUrl": "/images/carrot-cake.webp",
+        "title": "Carrot Cake",
         "price": 15,
         "subtitle": "Savor the wholesome goodness of our carrot cake, featuring moist layers of spiced cake with a rich cream cheese frosting."
     },
     {
         "cake_description": "Start your day off right or enjoy a mid-afternoon pick-me-up with our freshly baked croissants. Each one is crafted with layers of buttery dough, baked to a perfect golden-brown and boasting a crisp, flaky exterior that gives way to a soft, airy interior. Whether enjoyed plain or filled with rich chocolate or almond paste, our croissants offer a taste of indulgence that\u2019s both sophisticated and comforting. Perfect with a cup of coffee or as a delightful snack between classes, these croissants bring a touch of Parisian charm to your campus life and make every bite a moment to savor.",
         "id": 4,
-        "image_url": "/images/croissants.webp",
-        "name_of_cake": "Croissant",
+        "imageUrl": "/images/croissants.webp",
+        "title": "Croissant",
         "price": 4,
         "subtitle": "Experience flaky perfection with our buttery croissants, fresh and golden-brown for the ideal morning or afternoon treat."
     },
     {
         "cake_description": "Indulge in the classic French treat, pain au chocolat, and experience a perfect blend of textures and flavors. Our version features a perfectly flaky, buttery pastry that wraps around generous pieces of rich, melt-in-your-mouth chocolate. Baked to a golden-brown perfection, each bite offers a satisfying crunch followed by a gooey chocolate center that will satisfy your sweet tooth. Ideal for a morning pick-me-up or a delightful snack between classes, this pastry brings a touch of European elegance to your day and transforms an ordinary moment into a delicious escape.",
         "id": 5,
-        "image_url": "/images/pain-au-chocolat.webp",
-        "name_of_cake": "Pain Au Chocolat",
+        "imageUrl": "/images/pain-au-chocolat.webp",
+        "title": "Pain Au Chocolat",
         "price": 3,
         "subtitle": "Enjoy the ultimate chocolatey delight with our pain au chocolat\u2014flaky, buttery pastry filled with rich, melty chocolate."
     },
     {
         "cake_description": "Treat yourself to a playful twist on a classic with our M&M cookies, where chewy, golden-brown cookie dough is loaded with colorful, candy-coated M&Ms. Each bite combines the rich, buttery flavor of the cookie with the satisfying crunch and sweetness of the M&Ms, making for a delightful snack that's both fun and indulgent. Perfect for sharing with friends or enjoying as a solo treat, these cookies are a sweet escape from the daily grind and a guaranteed mood-lifter between classes or during study breaks. With every cookie, you get a burst of vibrant color and an irresistible combination of textures that makes snacking both exciting and satisfying.",
         "id": 6,
-        "image_url": "/images/m-m-cookies.webp",
-        "name_of_cake": "M&M Cookies",
+        "imageUrl": "/images/m-m-cookies.webp",
+        "title": "M&M Cookies",
         "price": 2,
         "subtitle": "Brighten up your day with our M&M cookies\u2014chewy, chocolate-chip perfection packed with colorful M&Ms for a burst of fun and flavor."
     },
     {
         "cake_description": "Dive into a world of comforting sweetness with our cinnamon bun, a bakery favorite that combines the perfect blend of spice and indulgence. Each bun is crafted with layers of soft, tender dough that\u2019s generously swirled with a rich cinnamon filling, then baked to a golden perfection. Topped with a luscious, creamy icing that melts into the warm pastry, this cinnamon bun is the ultimate treat for any time of day. Whether you\u2019re looking for a cozy breakfast, a satisfying snack, or a sweet reward after a long day of classes, our cinnamon bun offers a delightful escape with every bite. Enjoy the irresistible aroma and comforting flavors that make this pastry a campus staple and a delicious way to treat yourself.",
         "id": 7,
-        "image_url": "/images/cinnamon-bun.webp",
-        "name_of_cake": "Cinnamon Bun",
+        "imageUrl": "/images/cinnamon-bun.webp",
+        "title": "Cinnamon Bun",
         "price": 1,
         "subtitle": "Relish the warmth of our cinnamon bun\u2014a gooey, sweet delight with swirls of cinnamon and a rich, creamy icing drizzle."
     },
     {
         "cake_description": "Experience the ultimate in cozy indulgence with our apple pie, a timeless classic that never goes out of style. Each pie features a generous filling of tender, spiced apples, lovingly combined with just the right amount of cinnamon and sugar to enhance their natural sweetness. Encased in a buttery, flaky crust that adds a delightful crunch, this apple pie is baked to golden perfection. Whether enjoyed warm with a scoop of vanilla ice cream or as a sweet treat on its own, it\u2019s a comforting slice of home that\u2019s perfect for sharing with friends or savoring during a quiet moment between classes. Let the delicious aroma and rich flavors bring a touch of homemade goodness to your day.",
         "id": 8,
-        "image_url": "/images/apple-pie.webp",
-        "name_of_cake": "Apple Pie",
+        "imageUrl": "/images/apple-pie.webp",
+        "title": "Apple Pie",
         "price": 3,
         "subtitle": "Savor the classic comfort of our apple pie, with tender, spiced apples encased in a perfectly flaky crust and a hint of cinnamon."
     },
     {
         "cake_description": "Treat yourself to a rich, indulgent experience with our brownies, crafted to deliver a deeply satisfying chocolate fix. Each brownie is baked to perfection, with a dense, fudgy texture that melts in your mouth and a slightly crisp top that adds a delightful contrast. Made with high-quality cocoa and real chocolate, these brownies offer an intense chocolate flavor that\u2019s both comforting and luxurious. Ideal for a quick snack between classes or as a sweet reward after a long day, our brownies are perfect for sharing with friends or enjoying on your own. Experience the ultimate in chocolatey bliss with every bite, and let these brownies bring a touch of joy and decadence to your campus routine.",
         "id": 9,
-        "image_url": "/images/brownie.webp",
-        "name_of_cake": "Brownie",
+        "imageUrl": "/images/brownie.webp",
+        "title": "Brownie",
         "price": 2,
         "subtitle": "Indulge in our decadent brownie\u2014a rich, fudgy treat with a perfect balance of chocolatey goodness and a slightly crisp top."
     },
     {
         "cake_description": "Indulge in a slice of elegance with our Napoleon cake, a sophisticated dessert that combines layers of perfectly baked, flaky pastry with a smooth and rich vanilla custard filling. Each layer of delicate pastry is carefully stacked to create a light, crisp texture that contrasts beautifully with the creamy custard. Finished with a generous dusting of powdered sugar, this cake offers a balance of sweetness and lightness that makes it an ideal treat for any occasion. Whether enjoyed as a luxurious dessert after a meal or a refined snack between classes, the Napoleon cake brings a touch of French sophistication and indulgence to your campus experience.",
         "id": 10,
-        "image_url": "/images/napoleon-cake.webp",
-        "name_of_cake": "Napoleon Cake",
+        "imageUrl": "/images/napoleon-cake.webp",
+        "title": "Napoleon Cake",
         "price": 10,
         "subtitle": "Delight in our Napoleon cake\u2014a layered pastry masterpiece with crisp, flaky layers and creamy vanilla custard filling, topped with a dusting of powdered sugar."
     },
     {
         "cake_description": "Savor the delicious burst of flavor in our blueberry muffin, a campus favorite that\u2019s both moist and satisfying. Each muffin is generously studded with plump, juicy blueberries, creating pockets of fruity sweetness in every bite. The tender crumb is complemented by a delightful sugar streusel topping that adds a touch of crunch and extra sweetness. Perfect for a quick breakfast, a mid-day snack, or a sweet pick-me-up during study sessions, our blueberry muffin combines the best of flavor and texture. Enjoy the wholesome goodness and the comforting aroma that make this muffin a deliciously irresistible choice for any time of day.",
         "id": 11,
-        "image_url": "/images/blueberry-muffins.webp",
-        "name_of_cake": "Blueberry Muffin",
+        "imageUrl": "/images/blueberry-muffins.webp",
+        "title": "Blueberry Muffin",
         "price": 1,
         "subtitle": "Enjoy our blueberry muffin\u2014a moist, tender treat packed with juicy blueberries and topped with a crumbly sugar streusel for added sweetness."
     },
     {
         "cake_description": "Immerse yourself in the luxurious taste of our tiramisu, a beloved Italian classic that delivers a symphony of flavors and textures. This dessert features delicate layers of ladyfingers soaked in rich espresso, layered with a velvety mascarpone cream that\u2019s both creamy and light. Each bite offers a perfect balance of coffee and sweetness, complemented by a dusting of cocoa powder that adds a touch of bitterness and elegance. Ideal for a sophisticated dessert after a meal or a sweet treat during a study break, our tiramisu brings a touch of Italian flair and indulgence to your campus experience. Enjoy a taste of this timeless favorite and let its decadent layers transport you to dessert heaven.",
         "id": 12,
-        "image_url": "/images/tiramisu.webp",
-        "name_of_cake": "Tiramisu",
+        "imageUrl": "/images/tiramisu.webp",
+        "title": "Tiramisu",
         "price": 5,
         "subtitle": "Experience the rich, indulgent flavors of our tiramisu\u2014layers of espresso-soaked ladyfingers and creamy mascarpone, dusted with cocoa powder."
     },
     {
         "cake_description": "Delight in the rich, irresistible flavor of our pralines, a treat that combines crunchy, caramelized pecans with a smooth, buttery coating. Each praline is crafted to achieve the perfect balance of sweetness and nuttiness, creating a satisfying crunch with every bite. The caramelized coating adds a golden, slightly crispy exterior that enhances the rich, buttery flavor of the pecans. These pralines are perfect for enjoying as a sweet snack, a thoughtful gift, or a delightful addition to your study sessions. With their decadent taste and luxurious texture, our pralines are a delicious way to add a touch of indulgence to your day.",
         "id": 13,
-        "image_url": "/images/pralines.webp",
-        "name_of_cake": "Pralines",
+        "imageUrl": "/images/pralines.webp",
+        "title": "Pralines",
         "price": 4,
         "subtitle": "Savor the sweet, nutty goodness of our pralines\u2014crunchy, caramelized pecans with a smooth, buttery finish."
     }
