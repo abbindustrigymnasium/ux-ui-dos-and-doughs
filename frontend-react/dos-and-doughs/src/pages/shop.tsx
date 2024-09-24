@@ -1,11 +1,11 @@
-import ShopUI from "../components/ShopUI/ShopUI";
+import ShopUI from '../components/ShopUI/ShopUI'
 
 function Shop() {
-    return (
-        <section id="shop">
-            <ShopUI />
-        </section>
-    )
+  return (
+    <section id='shop'>
+      <ShopUI />
+    </section>
+  )
 }
 
 export default Shop

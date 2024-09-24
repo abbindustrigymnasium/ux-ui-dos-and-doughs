@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  --background-color: #FFF8F0;
-  --graphics-color: #1F1F1F;
+  --background-color: #fff8f0;
+  --graphics-color: #1f1f1f;
   --graphics-color-hover: #302f2f;
-  --graphics-color-light: #C8C4BF;
-  --graphics-color-lighter: #EEE8E1;
+  --graphics-color-light: #c8c4bf;
+  --graphics-color-lighter: #eee8e1;
   --graphics-color-lightest: #f5f0e9;
 
   --small-border-radius: 4px;
@@ -13,25 +13,26 @@
 }
 
 @font-face {
-  font-family: "Redaction";
+  font-family: 'Redaction';
   src: url(./fonts/Redaction-Regular.woff2);
   font-weight: 400;
 }
 
 @font-face {
-  font-family: "Redaction";
+  font-family: 'Redaction';
   src: url(./fonts/Redaction-Bold.woff2);
   font-weight: 700;
 }
 
 @font-face {
-  font-family: "Redaction";
+  font-family: 'Redaction';
   src: url(./fonts/Redaction-Italic.woff2);
   font-weight: 400;
   font-style: italic;
 }
 
-html.lenis, html.lenis body {
+html.lenis,
+html.lenis body {
   height: auto;
 }
 
@@ -52,7 +53,7 @@ html.lenis, html.lenis body {
 }
 
 body {
-  font-family: "Public Sans", sans-serif;
+  font-family: 'Public Sans', sans-serif;
   font-style: normal;
   font-optical-sizing: auto;
   font-synthesis: none;
@@ -80,12 +81,18 @@ body {
   outline: 0;
 }
 
-*::after, *::before {
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Redaction", serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Redaction', serif;
   font-style: normal;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -96,7 +103,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Public Sans", sans-serif;
+  font-family: 'Public Sans', sans-serif;
   font-size: 1rem;
   margin-bottom: 0.6em;
 }
@@ -118,7 +125,8 @@ a {
   color: unset;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
   margin: 0;
   padding: 0;

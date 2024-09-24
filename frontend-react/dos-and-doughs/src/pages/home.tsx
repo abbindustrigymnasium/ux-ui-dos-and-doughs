@@ -4,14 +4,14 @@ import SpecialOffers from '../components/SpecialOffers/SpecialOffers.tsx'
 import Testamonial from '../components/Testamonial/Testamonial.tsx'
 
 function Home() {
-    return (
-        <>
-            <Hero />
-            <Checklist />
-            <SpecialOffers />
-            <Testamonial />
-        </>
-    )
+  return (
+    <>
+      <Hero />
+      <Checklist />
+      <SpecialOffers />
+      <Testamonial />
+    </>
+  )
 }
 
 export default Home
