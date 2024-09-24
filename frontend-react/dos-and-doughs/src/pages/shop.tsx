@@ -1,7 +1,9 @@
+import ShopUI from "../components/ShopUI/ShopUI";
+
 function Shop() {
     return (
         <section id="shop">
-            <div>shop</div>
+            <ShopUI />
         </section>
     )
 }
