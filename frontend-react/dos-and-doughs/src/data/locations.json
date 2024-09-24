@@ -1,0 +1,12 @@
+[
+    { "address": "123 5th Avenue, Manhattan, 10001", "shorthand": "Manhattan", "id": 1, "city": "New York", "country": "United States", "phone": "+1 (212) 555-1234" },
+    { "address": "Unter den Linden 42, 10117", "shorthand": "Unter den Linden", "id": 2, "city": "Berlin", "country": "Germany", "phone": "+49 30 12345678" },
+    { "address": "Stora Gatan 7, 72212", "shorthand": "Stora Gatan", "id": 3, "city": "Västerås", "country": "Sweden", "phone": "+46 21 123 4567" },
+    { "address": "Drottninggatan 12, 11151", "shorthand": "Drottninggatan", "id": 4, "city": "Stockholm", "country": "Sweden", "phone": "+46 8 555 12345" },
+    { "address": "Karl Johans Gate 22, 0159", "shorthand": "Karl Johans Gate", "id": 5, "city": "Oslo", "country": "Norway", "phone": "+47 22 123 456" },
+    { "address": "Mannerheimintie 10, 00100", "shorthand": "Mannerheimintie", "id": 6, "city": "Helsinki", "country": "Finland", "phone": "+358 9 123 4567" },
+    { "address": "Strøget 25, 1100", "shorthand": "Strøget", "id": 7, "city": "Copenhagen", "country": "Denmark", "phone": "+45 33 123 456" },
+    { "address": "Gustav Adolfs Torg 4, 21139", "shorthand": "Gustav Adolfs Torg", "id": 8, "city": "Malmö", "country": "Sweden", "phone": "+46 40 123 456" },
+    { "address": "Avenyn 16, 41136", "shorthand": "Avenyn", "id": 9, "city": "Gothenburg", "country": "Sweden", "phone": "+46 31 123 4567" },
+    { "address": "Kungsgatan 18, 11135", "shorthand": "Kungsgatan", "id": 10, "city": "Stockholm", "country": "Sweden", "phone": "+46 8 123 4567" }
+]

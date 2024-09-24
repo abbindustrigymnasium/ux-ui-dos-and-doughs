@@ -1,7 +1,11 @@
+import VisitSearch from "../components/VisitSearch/VisitSearch"
+import LocationsList from "../components/LocationsList/LocationsList"
+
 function Visit() {
     return (
         <section id="visit">
-            <div>visit</div>
+            <VisitSearch />
+            <LocationsList />
         </section>
     )
 }
