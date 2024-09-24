@@ -9,8 +9,8 @@ function Testamonial() {
             </div>
             <div id="mask-animation-trigger"></div>
             <div className="testamonial-container">
-                <TestamonialItem layout="1" vid="1" quote="I love the way you make dough. It&rsquo;s so easy to make and it&rsquo;s so delicious." name="Name"/>
-                <TestamonialItem layout="2" vid="2" quote="I love the way you make dough. It&rsquo;s so easy to make and it&rsquo;s so delicious." name="Name"/>
+                <TestamonialItem layout="1" vid="1" quote="It&rsquo;s so much easier to study when you have a nice reliable place such as dos and doughs." name="Name"/>
+                <TestamonialItem layout="2" vid="2" quote="The sweets you make are incredible! Being able to pick one up right after class is the perfect way to end a day." name="Name"/>
             </div>
             <div className="extra-quotes-container">
                 <ul>
