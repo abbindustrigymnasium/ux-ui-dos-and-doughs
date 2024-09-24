@@ -1,0 +1,47 @@
+#follow {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 16em;
+}
+
+.follow-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4em;
+}
+
+.follow-icons {
+    display: flex;
+    column-gap: 2em;
+}
+
+.follow-icon {
+    width: 30px;
+}
+
+.instagram, .facebook, .linkedin, .spotify {
+    width: 200px;
+    display: flex;
+    padding-left: 1em;
+    padding-block: 0.8em;
+    align-items: center;
+    margin-bottom: 1em;
+    border-radius: var(--large-border-radius);
+}
+
+.instagram {
+    background-color: #E0B4E8;
+}
+
+.facebook {
+    background-color: #B4C8E8;
+}
+
+.linkedin {
+    background-color: #A7A6F1;
+}
+
+.spotify {
+    background-color: #9AEB99;
+}

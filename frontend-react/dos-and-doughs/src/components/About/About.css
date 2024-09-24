@@ -1,0 +1,38 @@
+#about {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 16em;
+}
+
+.about-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4em;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 8em;
+}
+
+.about-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 4em;
+}
+
+.about-grid div {
+    margin: auto;
+}
+
+.about-grid p {
+    max-width: 300px;
+}
+
+.script-logo {
+    width: 200px;
+}

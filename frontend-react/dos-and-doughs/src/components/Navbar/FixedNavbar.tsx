@@ -29,8 +29,8 @@ function FixedNavbar() {
                                 <img className="nav-dropdown-arrow" src={navDropdownArrow} alt="nav dropdown arrow" />
                             </div>
                         </li>
-                        <li><Link to="/shop" className='link'>Shop</Link></li>
-                        <li><Link to="/visit" className='link'>Visit</Link></li>
+                        <li><Link to="/shop" className='link-inv'>Shop</Link></li>
+                        <li><Link to="/visit" className='link-inv'>Visit</Link></li>
                     </ul>
                     <div className="vertical-line"></div>
                     <div className="account-nav">

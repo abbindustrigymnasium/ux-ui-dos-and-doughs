@@ -1,6 +1,5 @@
 import "./SpecialOffers.css"
 
-const scriptText = "/script-text.svg"
 const homeCake1 = "/offers-cake-1.png"
 const homeCake2 = "/offers-cake-2.png"
 
@@ -11,11 +10,8 @@ function SpecialOffers() {
     return (
         <section id="special-offers">
             <div className="special-offers-header">
-                <div>
-                    <SectionDivider />
-                    <h1>*Special Offers*</h1>
-                </div>
-                <img className="script-text" src={scriptText} alt="script text" />
+                <SectionDivider />
+                <h1>*Special Offers*</h1>
             </div>
             <div className="offer-cards">
                 <div className="offer-card">

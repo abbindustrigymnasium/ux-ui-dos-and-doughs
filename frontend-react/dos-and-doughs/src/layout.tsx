@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar/Navbar.tsx'
 import FixedNavbar from './components/Navbar/FixedNavbar.tsx'
 import BackToTop from './components/BackToTop/BackToTop.tsx'
+import Footer from './components/Footer/Footer.tsx'
 
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -103,7 +104,7 @@ function Layout() {
         buttons.forEach((button : HTMLElement) => {
             gsap.fromTo(button, {
                 opacity: 0,
-                x: -20,
+                x: -5,
             }, {
                 opacity: 1,
                 x: 0,
@@ -119,7 +120,6 @@ function Layout() {
 
         // Reveal image animation
         let imgContainers = gsap.utils.toArray(".img-container") as HTMLElement[];
-        //let imgContainers = document.querySelectorAll(".img-container") as NodeListOf<HTMLElement>;
 
         imgContainers.forEach((container : HTMLElement) => {
             let img = container.querySelector("img") as HTMLImageElement;
@@ -147,6 +147,26 @@ function Layout() {
                 ease: "Power2.out"
             });
         });
+
+        // Video player animation
+        let videoPlayers = gsap.utils.toArray(".video-container") as HTMLElement[];
+
+        videoPlayers.forEach((video : HTMLElement) => {
+            gsap.fromTo(video, {
+                opacity: 0,
+                x: 20,
+            }, {
+                opacity: 1,
+                x: 0,
+                duration: 1,
+                scrollTrigger: {
+                    trigger: video,
+                    start: "top 90%",
+                    toggleActions: "play none none reverse",
+                },
+                ease: "power1.inOut",
+            });
+        });
     });
 
     return (
@@ -158,7 +178,7 @@ function Layout() {
                 <main>
                     <Outlet />
                 </main>
-
+                <Footer />
             </Lenis>
         </>
     )

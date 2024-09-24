@@ -2,7 +2,7 @@
 
 :root {
   --background-color: #FFF8F0;
-  --graphics-color: #1F1F1F;
+  --graphics-color: #181818;
   --graphics-color-hover: #302f2f;
   --graphics-color-light: #C8C4BF;
   --graphics-color-lighter: #EEE8E1;
@@ -62,9 +62,14 @@ body {
 
   margin: 0;
   margin-top: 3em;
-  margin-inline: 4em;
   background-color: var(--background-color);
   color: var(--graphics-color);
+
+  overflow-x: hidden;
+}
+
+main {
+  margin-inline: 4em;
 }
 
 ::selection {

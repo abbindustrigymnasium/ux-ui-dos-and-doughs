@@ -1,5 +1,49 @@
 #what-students-say {
     width: 80%;
     margin: auto;
-    margin-bottom: 12em;
+    margin-bottom: 18em;
+    /*   Swap colors for dark mode */
+    color: var(--background-color);
+}
+
+#what-students-say ::selection {
+    background-color: var(--background-color);
+    color: var(--graphics-color);
+}
+
+.testamonial-header {
+    text-align: center;
+    margin-bottom: 8em;
+    padding-top: 3em;
+}
+
+.testamonial-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12em;
+    margin-bottom: 16em;
+}
+
+.extra-quotes-container {
+    width: 80%;
+    margin: auto;
+}
+
+.extra-quotes-container ul {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2em;
+    font-size: 0.9em;
+}
+
+.extra-quotes-container li {
+    font-weight: 600;
+    color: var(--graphics-color-light);
+}
+
+.extra-quotes-container span {
+    font-size: 0.9rem;
+    font-weight: 400;
 }
