@@ -1,30 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import ProductCard from '../ProductCard/ProductCard'
 import './ShopUI.css'
 
 import { productCardProps } from '../ProductCard/ProductCard'
 
-// example products
-const products: productCardProps[] = [
-  {
-    title: 'Product 1',
-    price: '$20',
-    description: 'some description',
-    subtitle: 'some subtitle',
-    imageUrl: '/images/tiramisu.webp',
-  },
-  {
-    title: 'Product 2',
-    price: '$30',
-    description: 'some description',
-    subtitle: 'some subtitle',
-    imageUrl: '/images/m-m-cookies.webp',
-  },
-]
-
 function Shop() {
   // state for products
   const [products, setProducts] = useState<productCardProps[]>([])
+  const [loading, setLoading] = useState<boolean>(true)
+  const [error, setError] = useState<boolean>(false)
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -37,13 +21,24 @@ function Shop() {
         setProducts(data)
       } catch (error) {
         console.log(error)
+        setError(true)
       } finally {
         console.log('finished fetching')
+        setLoading(false)
       }
     }
 
     fetchProducts()
   }, [])
+
+  if (error) {
+    return <h1 className='error'>Something went wrong</h1>
+  }
+
+  if (loading) {
+    return <h1 className='loading'>Loading...</h1>
+  }
+
   return (
     <div className='shop'>
       {products.map((product: productCardProps, index: number) => (
