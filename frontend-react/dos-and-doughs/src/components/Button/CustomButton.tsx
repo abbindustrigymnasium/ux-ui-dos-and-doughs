@@ -1,6 +1,6 @@
-import "./CustomButton.css"
+import './CustomButton.css'
 
-function CustomButton(p : any) {
+function CustomButton(p: any) {
   /*
   interface p {
     width: string,
@@ -23,8 +23,16 @@ function CustomButton(p : any) {
     </button>
     */
     <a href={p.href}>
-      <button style={{ width: p.width, boxShadow: p.shadow == "left" ? "-20px 10px 40px rgba(0, 0, 0, 0.15)" : "20px 10px 40px rgba(0, 0, 0, 0.15)",}}
-              className={p.inv ? "button inv" : "button"}>
+      <button
+        style={{
+          width: p.width,
+          boxShadow:
+            p.shadow == 'left'
+              ? '-20px 10px 40px rgba(0, 0, 0, 0.15)'
+              : '20px 10px 40px rgba(0, 0, 0, 0.15)',
+        }}
+        className={p.inv ? 'button inv' : 'button'}
+      >
         <span>
           <span>{p.content}</span>
         </span>

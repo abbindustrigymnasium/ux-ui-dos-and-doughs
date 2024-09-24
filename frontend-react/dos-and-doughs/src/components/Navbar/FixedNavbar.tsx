@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom'
 
 import './Navbar.css'
 
-const accountIcon = "/account-icon.svg";
-const navDropdownArrow = "/nav-dropdown-arrow.svg";
+const accountIcon = '/account-icon.svg'
+const navDropdownArrow = '/nav-dropdown-arrow.svg'
 
 function FixedNavbar() {
-    const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     return (
         <>

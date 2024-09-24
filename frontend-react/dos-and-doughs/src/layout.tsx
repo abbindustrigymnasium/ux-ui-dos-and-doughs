@@ -3,10 +3,10 @@ import FixedNavbar from './components/Navbar/FixedNavbar.tsx'
 import BackToTop from './components/BackToTop/BackToTop.tsx'
 import Footer from './components/Footer/Footer.tsx'
 
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useGSAP } from '@gsap/react';
-gsap.registerPlugin(ScrollTrigger);
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { useGSAP } from '@gsap/react'
+gsap.registerPlugin(ScrollTrigger)
 
 import { Outlet } from 'react-router-dom'
 
