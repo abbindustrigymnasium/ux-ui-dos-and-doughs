@@ -2,10 +2,114 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		%sveltekit.head%
 	</head>
+	<style>
+		/* Variables */
+		:root {
+			--background-color: #fff8f0;
+			--graphics-color: #1f1f1f;
+			--dimmed-graphics-color: #c7c2bc; /*rgba(31, 31, 31, 0.25);*/
+
+			--img-border-radius: 24px;
+			--button-border-radius: 4px;
+		}
+		/*   Font   */
+		@font-face {
+			font-family: 'Redaction';
+			src: url(/fonts/Redaction-Regular.woff2);
+			font-optical-sizing: auto;
+			font-weight: 400;
+		}
+
+		@font-face {
+			font-family: 'Redaction';
+			src: url(/fonts/Redaction-Bold.woff2);
+			font-optical-sizing: auto;
+			font-weight: 700;
+		}
+
+		@font-face {
+			font-family: 'Redaction';
+			src: url(/fonts/Redaction-Italic.woff2);
+			font-optical-sizing: auto;
+			font-weight: 400;
+			font-style: italic;
+		}
+
+		/* Styling the general thingys */
+		body {
+			font-family: 'Redaction', serif; /*Default font*/
+			font-style: normal;
+			font-optical-sizing: auto;
+			-webkit-font-smoothing: antialiased;
+
+			background-color: var(--background-color);
+			color: var(--main-text-color);
+
+			margin-inline: 2em;
+			margin-top: 1.5em;
+		}
+
+		::selection {
+			background-color: var(--graphics-color);
+			color: var(--background-color);
+		}
+
+		.lato {
+			font-family: 'Lato', sans-serif;
+			font-weight: 400;
+			font-style: normal;
+		}
+
+		p,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			margin: 0;
+			padding: 0;
+		}
+
+		a {
+			text-decoration: none;
+			color: unset;
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		img {
+			user-select: none;
+		}
+
+		.bold {
+			font-weight: 700;
+		}
+
+		.bottom-space-1 {
+			margin-bottom: 1em;
+		}
+
+		.major-img-styling {
+			box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.1);
+			border-radius: var(--img-border-radius);
+		}
+	</style>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
