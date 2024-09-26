@@ -32,16 +32,36 @@
 
 .instagram {
     background-color: #E0B4E8;
+    transition: background-color 200ms ease-in-out;
+}
+
+.instagram:hover {
+    background-color: #D098D8;
 }
 
 .facebook {
     background-color: #B4C8E8;
+    transition: background-color 200ms ease-in-out;
+}
+
+.facebook:hover {
+    background-color: #9AA3D8;
 }
 
 .linkedin {
     background-color: #A7A6F1;
+    transition: background-color 200ms ease-in-out;
+}
+
+.linkedin:hover {
+    background-color: #8A8AF1;
 }
 
 .spotify {
     background-color: #9AEB99;
+    transition: background-color 200ms ease-in-out;
+}
+
+.spotify:hover {
+    background-color: #8AD28A;
 }

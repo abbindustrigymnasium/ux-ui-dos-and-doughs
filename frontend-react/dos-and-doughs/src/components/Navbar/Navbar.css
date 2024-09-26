@@ -26,6 +26,14 @@
   /*border: 2px solid var(--graphics-color-hover);*/
 }
 
+.navbar .vertical-line {
+  height: 20px;
+}
+
+.fixed-navbar .vertical-line {
+  height: 20px;
+}
+
 .fixed-navbar menu {
   background-color: var(--graphics-color);
   color: var(--background-color);
@@ -75,13 +83,6 @@
 
 .home-nav-wrapper {
   position: relative;
-}
-
-.current {
-  text-decoration: underline;
-  text-decoration-color: var(--graphics-color-light);
-  text-decoration-thickness: 2px;
-  text-underline-offset: 8px;
 }
 
 .nav-home {
@@ -179,12 +180,6 @@
   display: flex;
   column-gap: 1.2em;
   align-items: center;
-}
-
-.vertical-line {
-  width: 4px;
-  height: 20px;
-  background-color: var(--graphics-color-light);
 }
 
 .account-nav {

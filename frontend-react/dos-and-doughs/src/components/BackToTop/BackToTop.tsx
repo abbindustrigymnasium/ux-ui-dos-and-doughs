@@ -10,22 +10,22 @@ function BackToTop() {
   }
 
   return (
-    <aside style={{ position: 'fixed', bottom: '1.5em', right: '2em' }} className='back-to-top'>
-      <div
-        style={{
-          backgroundColor: 'var(--graphics-color-lighter)',
-          paddingInline: '2em',
-          paddingBlock: '0.5em',
-          borderRadius: 'var(--large-border-radius)',
-          color: 'var(--graphics-color)',
-          fontSize: '0.8em',
-          fontWeight: '600',
-        }}
-      >
-        <a onClick={scrollToTop} style={{ cursor: 'pointer' }}>
+    <aside style={{ position: 'fixed', bottom: '1.5em', right: '2em', zIndex: "10" }} className='back-to-top'>
+      <a onClick={scrollToTop} style={{ cursor: 'pointer' }}>
+        <div
+          style={{
+            backgroundColor: 'var(--graphics-color-lighter)',
+            paddingInline: '2em',
+            paddingBlock: '0.5em',
+            borderRadius: 'var(--large-border-radius)',
+            color: 'var(--graphics-color)',
+            fontSize: '0.8em',
+            fontWeight: '600',
+          }}
+        >
           Back To Top
-        </a>
-      </div>
+        </div>
+      </a>
     </aside>
   )
 }

@@ -3,6 +3,7 @@ import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 
 import { Link } from 'react-router-dom'
+import ScrollToHashElement from "../ScrollToHashElement";
 
 import './Navbar.css'
 
@@ -10,7 +11,7 @@ const logo = '/logo.svg'
 const accountIcon = '/account-icon.svg'
 const navDropdownArrow = '/nav-dropdown-arrow.svg'
 
-function Navbar() {
+function Navbar({ currentPage }: { currentPage: string }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const navBarUlScope = useRef(null)
@@ -83,6 +84,7 @@ function Navbar() {
   return (
     <>
       <nav className='navbar'>
+        <ScrollToHashElement />
         <Link to='/' className='link'>
           <img className='logo' src={logo} alt='dos and doughs logo' />
         </Link>
@@ -98,34 +100,18 @@ function Navbar() {
                 onMouseEnter={() => setIsMenuOpen(true)}
                 onMouseLeave={() => setIsMenuOpen(false)}
               >
-                <a className='link' href='#special-offers'>
-                  Offers
-                </a>
-                <a className='link' href='#what-students-say'>
-                  What students say
-                </a>
-                <a className='link' href='#'>
-                  About
-                </a>
-                <a className='link' href='#'>
-                  Partners
-                </a>
-                <a className='link' href='#'>
-                  FAQ
-                </a>
-                <a className='link' href='#'>
-                  Contact
-                </a>
-                <a className='link' href='#'>
-                  Follow
-                </a>
+                <Link to="#special-offers" className='link'>Offers</Link>
+                <Link to="#what-students-say" className='link'>What students say</Link>
+                <Link to="#about" className='link'>About</Link>
+                <Link to="#faq-section" className='link'>FAQ</Link>
+                <Link to="#follow" className='link'>Follow Us</Link>
               </menu>
               <div
                 className='nav-home link'
                 onMouseEnter={() => setIsMenuOpen(true)}
                 onMouseLeave={() => setIsMenuOpen(false)}
               >
-                <Link to='/' className='current'>
+                <Link to='/' className={currentPage === '/' ? 'underline' : 'link'}>
                   Home
                 </Link>
                 <img
@@ -136,12 +122,12 @@ function Navbar() {
               </div>
             </li>
             <li>
-              <Link to='/shop' className='link'>
+              <Link to='/shop' className={currentPage === '/shop' ? 'underline link' : 'link'}>
                 Shop
               </Link>
             </li>
             <li>
-              <Link to='/visit' className='link'>
+              <Link to='/visit' className={currentPage === '/visit' ? 'underline link' : 'link'}>
                 Visit
               </Link>
             </li>
@@ -149,7 +135,7 @@ function Navbar() {
           <div className='vertical-line'></div>
           <div className='account-nav'>
             <img className='account-icon' src={accountIcon} alt='account icon' />
-            <Link to='/account' className='link'>
+            <Link to='/account' className={currentPage === '/account' ? 'underline link' : 'link'}>
               Account
             </Link>
           </div>
