@@ -9,11 +9,21 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 4em;
+    column-gap: 4em;
+}
+
+.follow-container h1 {
+    flex-grow: 1;
+    text-wrap: nowrap;
+    
 }
 
 .follow-icons {
     display: flex;
     column-gap: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0.5em;
 }
 
 .follow-icon {
@@ -64,4 +74,13 @@
 
 .spotify:hover {
     background-color: #8AD28A;
+}
+
+@media screen and (max-width: 1200px) {
+    .follow-container {
+        flex-wrap: wrap;
+        row-gap: 3em;
+        align-items: center;
+        text-align: center;
+    }
 }

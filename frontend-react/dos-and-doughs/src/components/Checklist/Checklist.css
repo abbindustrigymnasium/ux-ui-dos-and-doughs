@@ -36,3 +36,32 @@
   flex-direction: row;
   column-gap: 6em;
 }
+
+
+@media screen and (max-width: 1200px) {
+  .checklist-layout {
+    width: 90%;
+    flex-direction: column;
+    row-gap: 4em;
+    align-items: center;
+  }
+
+  .checklist-item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3em;
+  }
+
+  .item-columns {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+    align-items: center;
+  }
+
+  #checklist h1 {
+    text-align: center;
+  }
+}

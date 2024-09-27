@@ -191,3 +191,50 @@
 .account-icon {
   width: 16px;
 }
+
+
+.mobile-navbar {
+  margin-inline: 2em;
+  margin-bottom: 4em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger-menu {
+  width: 24px;
+}
+
+.hamburger-menu-wrapper {
+  cursor: pointer;
+  padding: 1em;
+  margin-bottom: 0.5em;
+}
+
+.mobile-navbar {
+  display: none !important;
+}
+
+@media screen and (max-width: 900px) {
+  .navbar {
+    display: none !important;
+  }
+
+  .mobile-navbar {
+    display: flex !important;
+    margin-top: -1em;
+  }
+
+  .mobile-navbar .navbar-links {
+    position: absolute;
+    top: 0;
+    background-color: var(--background-color);
+    height: 7em;
+    column-gap: 2em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .fixed-navbar {
+    display: none;
+  }
+}

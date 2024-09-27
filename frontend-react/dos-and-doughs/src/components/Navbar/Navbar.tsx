@@ -14,6 +14,8 @@ const navDropdownArrow = '/nav-dropdown-arrow.svg'
 function Navbar({ currentPage }: { currentPage: string }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
   const navBarUlScope = useRef(null)
 
   useGSAP(
@@ -133,6 +135,41 @@ function Navbar({ currentPage }: { currentPage: string }) {
             </li>
           </ul>
           <div className='vertical-line'></div>
+          <div className='account-nav'>
+            <img className='account-icon' src={accountIcon} alt='account icon' />
+            <Link to='/account' className={currentPage === '/account' ? 'underline link' : 'link'}>
+              Account
+            </Link>
+          </div>
+        </div>
+      </nav>
+      <nav className='mobile-navbar'>
+        <ScrollToHashElement />
+        <Link to='/' className='link'>
+          <img className='logo' src={logo} alt='dos and doughs logo' />
+        </Link>
+        <div onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className='hamburger-menu-wrapper'>
+          <img src="/hamburger-menu.svg" alt="hamburger menu" className="hamburger-menu" style={{display: isMobileMenuOpen ? 'none' : 'block'}} />
+          <img src="/close-icon.svg" alt="close icon" className="hamburger-menu" style={{display: isMobileMenuOpen ? 'block' : 'none'}} />
+        </div>
+        <div className='navbar-links' style={{display: isMobileMenuOpen ? 'flex' : 'none'}}>
+          <ul ref={navBarUlScope}>
+            <li>
+              <Link to='/' className={currentPage === '/' ? 'underline' : 'link'}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to='/shop' className={currentPage === '/shop' ? 'underline link' : 'link'}>
+                Shop
+              </Link>
+            </li>
+            <li>
+              <Link to='/visit' className={currentPage === '/visit' ? 'underline link' : 'link'}>
+                Visit
+              </Link>
+            </li>
+          </ul>
           <div className='account-nav'>
             <img className='account-icon' src={accountIcon} alt='account icon' />
             <Link to='/account' className={currentPage === '/account' ? 'underline link' : 'link'}>

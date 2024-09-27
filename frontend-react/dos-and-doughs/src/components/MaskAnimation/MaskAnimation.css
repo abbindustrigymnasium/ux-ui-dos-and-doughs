@@ -16,3 +16,9 @@
     mix-blend-mode: difference;
     background-color: var(--graphics-color);
 }
+
+@media screen and (max-width: 900px) {
+    .mask-animation-container {
+        display: none;
+    }
+}
