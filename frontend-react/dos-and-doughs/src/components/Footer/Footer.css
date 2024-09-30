@@ -5,6 +5,8 @@
     color: var(--background-color);
     padding-inline: 4em;
     padding-block: 3em;
+    border-top-left-radius: var(--large-border-radius);
+    border-top-right-radius: var(--large-border-radius);
 }
 
 #footer .vertical-line {
