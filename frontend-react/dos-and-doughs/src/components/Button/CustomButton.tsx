@@ -1,28 +1,10 @@
 import './CustomButton.css'
 
-function CustomButton(p: any) {
-  /*
-  interface p {
-    width: string,
-    shadow: string,
-    href: string,
-    content: string,
-    inv?: boolean
-  }
-  */
+import { Link } from 'react-router-dom'
 
+function CustomButton(p: any) {
   return (
-    /*
-    <button>
-      <div  style={{ width: p.width, boxShadow: p.shadow == "left" ? "-20px 10px 40px rgba(0, 0, 0, 0.2)" : "20px 10px 40px rgba(0, 0, 0, 0.2)",}}
-          className={p.inv ? "button inv" : "button"}>
-        <a href="{p.href}">
-          <span>{p.content}</span>
-        </a>
-      </div>
-    </button>
-    */
-    <a href={p.href}>
+    <Link to={p.href} style={{width: "min-content"}}>
       <button
         style={{
           width: p.width,
@@ -37,7 +19,7 @@ function CustomButton(p: any) {
           <span>{p.content}</span>
         </span>
       </button>
-    </a>
+    </Link>
   )
 }
 

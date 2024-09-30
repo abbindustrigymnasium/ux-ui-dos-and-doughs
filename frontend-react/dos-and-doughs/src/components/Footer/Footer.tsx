@@ -4,15 +4,19 @@ import CustomButton from "../Button/CustomButton"
 
 import logo from "/footer-logo.svg"
 
+import { Link } from 'react-router-dom'
+import ScrollToHashElement from "../ScrollToHashElement";
+
 function Footer() {
     return (
         <footer id="footer">
+            <ScrollToHashElement />
             <div className="footer-layout">
                 <div className="footer-left-content">
                     <img className="footer-logo" src={logo} alt="logo" />
                     <div>
                         <p style={{marginBottom: "1em"}}>Fuel Your Studies with Fresh Sweets</p>
-                        <CustomButton width="120px" content="Visit" />
+                        <CustomButton width="120px" content="Visit" inv={true} />
                     </div>
                 </div>
                 <div className="vertical-line"></div>
@@ -20,24 +24,23 @@ function Footer() {
                     <div>
                         <h2>Home</h2>
                         <ul>
-                            <li>Offers</li>
-                            <li>What students say</li>
-                            <li>About</li>
-                            <li>FAQ</li>
-                            <li>Contact</li>
-                            <li>Follow</li>
+                            <Link to="/#special-offers" className="link-inv"><li>Offers</li></Link>
+                            <Link to="/#what-students-say" className="link-inv"><li>What students say</li></Link>
+                            <Link to="/#about" className="link-inv"><li>About</li></Link>
+                            <Link to="/#faq-section" className="link-inv"><li>FAQ</li></Link>
+                            <Link to="/#follow" className="link-inv"><li>Follow</li></Link>
                         </ul>
                     </div>
                     <div>
                         <h2>Shop</h2>
                         <ul>
-                            <li>Shop</li>
-                            <li>Cart</li>
+                            <Link to="/shop" className="link-inv"><li>Shop</li></Link>
+                            <Link to="" className="link-inv"><li>Cart</li></Link>
                         </ul>
                     </div>
                     <div>
                         <h2>Visit</h2>
-                        <a href="">Search for your city</a>
+                        <Link to="/visit" className="link-inv">Search for your city</Link>
                     </div>
                 </div>
                 <div className="footer-right-content">
@@ -46,10 +49,11 @@ function Footer() {
                         <input type="email" placeholder="Enter your email" />
                         <button>Sign Up</button>
                     </form>
-                    <p>Sign up and recieve special offers, discounts, general news and more.</p>
+                    <p style={{color: "var(--graphics-color-hover-light)", fontWeight: "600"}}>Sign up and recieve special offers, discounts, general news and more.</p>
                 </div>
             </div>
             <hr />
+            <p className="copyright-notice">© {(new Date().getFullYear())} Do's & Doughs</p>
         </footer>
     )
 }

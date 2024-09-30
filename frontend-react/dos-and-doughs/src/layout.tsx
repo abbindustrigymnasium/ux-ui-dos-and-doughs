@@ -169,6 +169,19 @@ function Layout() {
                 ease: "power1.inOut",
             });
         });
+
+        // Footer animation
+        gsap.fromTo("#footer", {
+            opacity: 0,
+        }, {
+            opacity: 1,
+            duration: 1,
+            scrollTrigger: {
+                trigger: "#footer",
+                toggleActions: "play none none reverse",
+            },
+            ease: "power1.inOut",
+        });
     });
 
     return (
