@@ -1,6 +1,6 @@
 import "./Footer.css"
 
-import CustomButton from "../Button/CustomButton"
+import CustomButton from "../NiceButton/NiceButton"
 
 import logo from "/footer-logo.svg"
 

@@ -2,7 +2,7 @@ import './Hero.css'
 
 const heroImg = '/hero-img.png'
 
-import CustomButton from '../Button/CustomButton.tsx'
+import CustomButton from '../NiceButton/NiceButton.tsx'
 import VisualBox from '../VisualBox/VisualBox.tsx'
 import SectionDivider from '../SectionDivider/SectionDivider.tsx'
 
@@ -28,7 +28,7 @@ function Hero() {
           </div>
           <CustomButton
             href='#'
-            content='&#9826;&nbsp;&nbsp;ORDER NOW'
+            content='ORDER NOW'
             width='200px'
             shadow='left'
           />

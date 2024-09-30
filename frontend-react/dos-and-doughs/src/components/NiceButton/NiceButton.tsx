@@ -1,4 +1,4 @@
-import './CustomButton.css'
+import './NiceButton.css'
 
 import { Link } from 'react-router-dom'
 
@@ -16,7 +16,7 @@ function CustomButton(p: any) {
         className={p.inv ? 'button inv' : 'button'}
       >
         <span>
-          <span>{p.content}</span>
+          <span><div className='button-deco'></div>{p.content}</span>
         </span>
       </button>
     </Link>
