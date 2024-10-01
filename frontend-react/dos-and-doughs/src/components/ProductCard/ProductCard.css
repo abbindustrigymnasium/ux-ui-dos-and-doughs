@@ -28,4 +28,17 @@
 .cake-subtitle {
   color: white;
   text-align: left;
+  width: 50%;
 }
+
+.cake-price {
+  color: white;
+  margin: 10px;
+  margin-right: 25px;
+  font-size: 36px;
+}
+
+.cake-business {
+  color: red; 
+}
+

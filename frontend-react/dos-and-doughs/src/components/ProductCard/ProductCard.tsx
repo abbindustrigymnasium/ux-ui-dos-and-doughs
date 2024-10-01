@@ -13,7 +13,11 @@ function ProductCard(props: productCardProps) {
     <div className='product-card img-styling' style={{ backgroundImage: `url(${props.imageUrl})` }}>
       <div className='cake-info'>
         <h1 className='cake-title'>{props.title}</h1>
-        <p>{props.subtitle}</p>
+        <p className='cake-subtitle'>{props.subtitle}</p>
+      </div>
+      <div className='cake-business'>
+        <h1 className='cake-price'>${props.price}</h1>
+        <button className='order-button'>Add to Cart</button>
       </div>
     </div>
   )
