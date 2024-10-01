@@ -8,11 +8,13 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
 gsap.registerPlugin(ScrollTrigger)
 
-import { Outlet } from 'react-router-dom'
+import { Outlet, useLocation } from 'react-router-dom'
 
 import Lenis from './components/Lenis.tsx'
 
 function Layout() {
+    const location = useLocation();
+
     useGSAP(() => {
         gsap.fromTo(".fixed-navbar", {
             opacity: 0,
@@ -167,12 +169,25 @@ function Layout() {
                 ease: "power1.inOut",
             });
         });
+
+        // Footer animation
+        gsap.fromTo("#footer", {
+            opacity: 0,
+        }, {
+            opacity: 1,
+            duration: 1,
+            scrollTrigger: {
+                trigger: "#footer",
+                toggleActions: "play none none reverse",
+            },
+            ease: "power1.inOut",
+        });
     });
 
     return (
         <>
             <Lenis>
-                <Navbar />
+                <Navbar currentPage={location.pathname} />
                 <FixedNavbar />
                 <BackToTop />
                 <main>

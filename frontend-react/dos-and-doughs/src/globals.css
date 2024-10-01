@@ -3,6 +3,7 @@
 :root {
   --background-color: #FFF8F0;
   --graphics-color: #181818;
+  --graphics-color-hover-light: #464545;
   --graphics-color-hover: #302f2f;
   --graphics-color-light: #c8c4bf;
   --graphics-color-lighter: #eee8e1;
@@ -118,6 +119,14 @@ hr {
   width: 100%;
   height: 4px;
   background-color: var(--graphics-color-lighter);
+  border-radius: 4px;
+}
+
+.vertical-line {
+  width: 4px;
+  height: 100%;
+  background-color: var(--graphics-color-light);
+  border-radius: 4px;
 }
 
 p {
@@ -146,6 +155,13 @@ img {
   font-weight: 700;
 }
 
+.underline {
+  text-decoration: underline;
+  text-decoration-color: var(--graphics-color-light);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 8px;
+}
+
 .link {
   cursor: pointer;
   position: relative;
@@ -160,6 +176,7 @@ img {
   bottom: -5px;
   left: 0;
   background-color: var(--graphics-color);
+  border-radius: 4px;
   transform-origin: bottom right;
   transition: transform 0.25s ease-in-out;
 }
@@ -183,6 +200,7 @@ img {
   bottom: -5px;
   left: 0;
   background-color: var(--background-color);
+  border-radius: 4px;
   transform-origin: bottom right;
   transition: transform 0.25s ease-in-out;
 }
@@ -203,4 +221,10 @@ img {
 .img-styling {
   border-radius: var(--large-border-radius);
   box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 700px) {
+  main {
+    margin-inline: 2em;
+  }
 }

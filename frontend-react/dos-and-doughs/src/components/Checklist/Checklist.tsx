@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger)
 const checkIcon = '/check-icon.svg'
 const scriptArrow = '/script-arrow.svg'
 
-import CustomButton from '../Button/CustomButton.tsx'
+import CustomButton from '../NiceButton/NiceButton.tsx'
 
 function Checklist() {
   useGSAP(() => {
@@ -70,7 +70,7 @@ function Checklist() {
               </p>
               <img className='check-icon' src={checkIcon} alt='check icon' />
             </div>
-            <CustomButton href='#' content='&#9826;&nbsp;&nbsp;VISIT' width='140px' shadow='left' />
+            <CustomButton href='#' content='VISIT' width='140px' shadow='left' />
           </div>
           <hr />
         </div>

@@ -47,3 +47,28 @@
     font-size: 0.9rem;
     font-weight: 400;
 }
+
+@media screen and (max-width: 1500px) {
+    .testamonial-container {
+        margin-bottom: 10em;
+        row-gap: 10em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #what-students-say {
+        margin-bottom: 10em;
+    }
+
+    .testamonial-container {
+        row-gap: 8em;
+    }
+
+    .extra-quotes-container {
+        display: none;
+    }
+
+    #what-students-say {
+        color: var(--graphics-color);
+    }
+}

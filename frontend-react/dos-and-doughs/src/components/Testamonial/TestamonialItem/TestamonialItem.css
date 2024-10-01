@@ -58,3 +58,32 @@
 .layout-2 {
     width: 45%;
 }
+
+@media screen and (max-width: 1500px) {
+    .testamonial-item {
+        flex-direction: column;
+        row-gap: 2em;
+        align-items: center;
+        padding-bottom: 4em;
+    }
+
+    .video-container {
+        width: 100%;
+    }
+
+    .layout-2 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .quote-container {
+        width: 100%;
+    }
+
+    /*
+    .quote-container h1 {
+        font-size: 1.5rem;
+    }
+    */
+}

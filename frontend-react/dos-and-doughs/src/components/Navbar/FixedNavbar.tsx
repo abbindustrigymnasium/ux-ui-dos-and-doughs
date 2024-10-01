@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import ScrollToHashElement from "../ScrollToHashElement";
 
 import './Navbar.css'
 
@@ -12,17 +13,16 @@ function FixedNavbar() {
     return (
         <>
             <nav className="fixed-navbar">
+                <ScrollToHashElement />
                 <div className="navbar-links">
                     <ul>
                         <li className="home-nav-wrapper">
                             <menu className="nav-dropdown" style = {{opacity: isMenuOpen ? "1" : "0", pointerEvents: isMenuOpen ? "auto" : "none"}} onMouseEnter={() => setIsMenuOpen(true)} onMouseLeave={() => setIsMenuOpen(false)}>
-                                <a className="link-inv" href="#special-offers">Offers</a>
-                                <a className="link-inv" href="#what-students-say">What students say</a>
-                                <a className="link-inv" href="#">About</a>
-                                <a className="link-inv" href="#">Partners</a>
-                                <a className="link-inv" href="#">FAQ</a>
-                                <a className="link-inv" href="#">Contact</a>
-                                <a className="link-inv" href="#">Follow</a>
+                            <Link to="#special-offers" className='link'>Offers</Link>
+                            <Link to="#what-students-say" className='link'>What students say</Link>
+                            <Link to="#about" className='link'>About</Link>
+                            <Link to="#faq-section" className='link'>FAQ</Link>
+                            <Link to="#follow" className='link'>Follow Us</Link>
                             </menu>
                             <div className="nav-home link-inv" onMouseEnter={() => setIsMenuOpen(true)} onMouseLeave={() => setIsMenuOpen(false)}>
                                 <Link to="/" className='current'>Home</Link>

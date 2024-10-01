@@ -13,8 +13,9 @@ function FaqSection() {
                 <FaqQuestion q="Question" a="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit at elit nec aliquet. Cras dapibus ipsum magna, nec porta orci finibus eget."/>
                 <FaqQuestion q="Question" a="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit at elit nec aliquet. Cras dapibus ipsum magna, nec porta orci finibus eget."/>
                 <FaqQuestion q="Question" a="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit at elit nec aliquet. Cras dapibus ipsum magna, nec porta orci finibus eget."/>
+                <FaqQuestion q="Question" a="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In hendrerit at elit nec aliquet. Cras dapibus ipsum magna, nec porta orci finibus eget."/>
             </div>
-            <p style={{textAlign: "center"}}>If you have more questions, don't hesitate to<br /> contact us at info@dosanddoughs.com</p>
+            <p style={{textAlign: "center"}}>If you have more questions, don't hesitate to<br /> contact us at <span className="underline link"><a href="mailto:info@dosanddoughs.com">info@dosanddoughs.com</a></span></p>
         </section>
     )
 }

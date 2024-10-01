@@ -12,10 +12,10 @@ function Follow() {
             <div className="follow-container">
                 <h1>Follow Us</h1>
                 <div className="follow-icons">
-                    <div className="instagram"><img className="follow-icon" src={instagram} alt="instagram logo" /></div>
-                    <div className="facebook"><img className="follow-icon" src={facebook} alt="facebook logo" /></div>
-                    <div className="linkedin"><img className="follow-icon" src={linkedin} alt="linkedin logo" /></div>
-                    <div className="spotify"><img className="follow-icon" src={spotify} alt="spotify logo" /></div>
+                    <a className="instagram" href="#"><img className="follow-icon" src={instagram} alt="instagram logo" /></a>
+                    <a className="facebook" href="#"><img className="follow-icon" src={facebook} alt="facebook logo" /></a>
+                    <a className="linkedin" href="#"><img className="follow-icon" src={linkedin} alt="linkedin logo" /></a>
+                    <a className="spotify" href="#"><img className="follow-icon" src={spotify} alt="spotify logo" /></a>
                 </div>
             </div>
         </section>

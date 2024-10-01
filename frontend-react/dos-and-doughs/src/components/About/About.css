@@ -36,3 +36,15 @@
 .script-logo {
     width: 200px;
 }
+
+@media screen and (max-width: 900px) {
+    .script-text {
+        display: none;
+    }
+
+    .about-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
