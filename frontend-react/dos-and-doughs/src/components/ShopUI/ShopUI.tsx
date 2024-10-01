@@ -4,6 +4,8 @@ import './ShopUI.css'
 
 import { productCardProps } from '../ProductCard/ProductCard'
 
+import SectionDivider from '../SectionDivider/SectionDivider.tsx'
+
 function Shop() {
   // state for products
   const [products, setProducts] = useState<productCardProps[]>([])
@@ -13,7 +15,7 @@ function Shop() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch('/cakes-api.json')
+        const response = await fetch('/cakes.json')
         if (!response.ok) {
           throw new Error('Something went wrong')
         }
@@ -23,7 +25,7 @@ function Shop() {
         console.log(error)
         setError(true)
       } finally {
-        console.log('finished fetching')
+        console.log('Finished fetching product images')
         setLoading(false)
       }
     }
@@ -40,7 +42,28 @@ function Shop() {
   }
 
   return (
-    <div className='shop'>
+    <>
+      <div className='shop-nav-container'>
+        <div className='shop-header'>
+          <SectionDivider />
+          <h1>Order anything anywhere</h1>
+        </div>
+        <div className='shop-spread'>
+          <p>Added total items: 0</p>
+          <p>Cart</p>
+        </div>
+        <div className='shop-spread'>
+          <div>Cakes</div>
+          <div className='vertical-line'></div>
+          <div>Drinks</div>
+          <div className='vertical-line'></div>
+          <div>Snacks</div>
+        </div>
+        <div>
+          Presets
+          Sort by
+        </div>
+      </div>
       {products.map((product: productCardProps, index: number) => (
         <ProductCard
           key={index}
@@ -51,7 +74,7 @@ function Shop() {
           imageUrl={product.imageUrl}
         />
       ))}
-    </div>
+    </>
   )
 }
 

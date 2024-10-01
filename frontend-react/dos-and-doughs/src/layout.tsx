@@ -15,6 +15,12 @@ import Lenis from './components/Lenis.tsx'
 function Layout() {
     const location = useLocation();
 
+    let specialOffers : any;
+
+    if (document.getElementById('special-offers')) {
+        specialOffers = document.getElementById('special-offers')
+    }
+
     useGSAP(() => {
         gsap.fromTo(".fixed-navbar", {
             opacity: 0,
@@ -24,7 +30,7 @@ function Layout() {
             y: 0,
             duration: 1,
             scrollTrigger: {
-                trigger: "#special-offers",
+                trigger: specialOffers,
                 toggleActions: "play none none reverse",
             },
             ease: "power1.inOut",
@@ -38,7 +44,7 @@ function Layout() {
             x: 0,
             duration: 1,
             scrollTrigger: {
-                trigger: "#special-offers",
+                trigger: specialOffers,
                 toggleActions: "play none none reverse",
             },
             ease: "power1.inOut",

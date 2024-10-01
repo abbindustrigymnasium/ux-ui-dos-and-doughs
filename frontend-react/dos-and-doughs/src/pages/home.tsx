@@ -7,9 +7,14 @@ import About from '../components/About/About.tsx'
 import FAQ from '../components/FaqSection/FaqSection.tsx'
 import Follow from '../components/Follow/Follow.tsx'
 
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+
 function Home() {
     return (
-        <>
+        <HelmetProvider>
+            <Helmet>
+                <title>Do's & Doughs</title>
+            </Helmet>
             <Hero />
             <Checklist />
             <SpecialOffers />
@@ -18,7 +23,7 @@ function Home() {
             <About />
             <FAQ />
             <Follow />
-        </>
+        </HelmetProvider>
     )
 }
 

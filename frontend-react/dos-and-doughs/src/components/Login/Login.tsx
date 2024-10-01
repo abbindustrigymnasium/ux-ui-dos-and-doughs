@@ -40,6 +40,15 @@ function Login() {
                             </button>
                         </div>
                     </div>
+                    <div className='account-benefits'>
+                        <div>
+                            <h2>Benefits of having an account:</h2>
+                            <ul>
+                                <li>Save your favorite order as a preset</li>
+                                <li>Get access to exclusive discounts and offers, inlcuding 50% off on your first order</li>
+                            </ul>
+                        </div>
+                    </div>
                     <p style={{textAlign: 'center'}}>Don't have an account? <a className='link underline' onClick={() => setType('signup')}>Sign up</a></p>
                 </div>
             )}

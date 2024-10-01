@@ -4,6 +4,8 @@ import { useState } from 'react'
 
 import locations from '../../data/locations.json'
 
+import SectionDivider from '../SectionDivider/SectionDivider.tsx'
+
 function renderResult(location: any) {
   if (!location) return <p>Select a location to see details.</p>
 
@@ -95,7 +97,10 @@ function VisitSearch() {
 
   return (
     <>
-      <h1>Find us near you</h1>
+      <div>
+        <SectionDivider />
+        <h1>Find us near you</h1>
+      </div>
       <div style={{ position: 'relative' }}>
         <input
           className='visit-search-input'

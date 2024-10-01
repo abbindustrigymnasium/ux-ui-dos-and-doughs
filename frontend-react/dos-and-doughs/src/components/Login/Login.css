@@ -77,6 +77,18 @@
     column-gap: 1em;
 }
 
+.account-benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--graphics-color-light);
+    margin-bottom: 2em;
+}
+
+.account-benefits h2 {
+    font-weight: 600;
+}
+
 /* Google button, generated using https://developers.google.com/identity/branding-guidelines */
 
 .gsi-material-button {
