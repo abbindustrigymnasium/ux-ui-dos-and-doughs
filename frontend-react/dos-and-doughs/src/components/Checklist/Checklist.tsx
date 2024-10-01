@@ -3,7 +3,7 @@ import './Checklist.css'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger, useGSAP)
 
 const checkIcon = '/check-icon.svg'
 const scriptArrow = '/script-arrow.svg'

@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
+gsap.registerPlugin(useGSAP);
 
 import { Link } from 'react-router-dom'
 import ScrollToHashElement from "../ScrollToHashElement";

@@ -1,12 +1,19 @@
 import { useLenis } from 'lenis/react'
+import { useEffect } from 'react'
 
 function BackToTop() {
+  /*
   const lenis = useLenis()
 
   const scrollToTop = () => {
     if (lenis) {
       lenis.scrollTo(0) // Use Lenis to scroll smoothly to the top
     }
+  }
+  */
+
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
   }
 
   return (

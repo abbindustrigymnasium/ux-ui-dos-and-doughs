@@ -1,0 +1,77 @@
+.product-img {
+  width: 800px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.product-button-row {
+  display: flex;
+  column-gap: 0.5em;
+  align-items: center;
+}
+
+.product-button-row p {
+  margin-left: 1em;
+}
+
+.product-card-container {
+  display: flex;
+  justify-content: space-between;
+  width: 72%;
+  margin: auto;
+  align-items: center;
+}
+
+.product-card-description {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  row-gap: 2em;
+}
+
+/*
+.product-card {
+  border-radius: 32px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 250px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0px 50px 15px rgba(0, 0, 0, 0.6);
+}
+
+.cake-info {
+  margin: 1em;
+  color: white;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0,.7);
+}
+
+.cake-title {
+  text-align: left;
+  font-size: 40px;
+  justify-content: left;
+}
+
+.cake-subtitle {
+  color: white;
+  text-align: left;
+  width: 50%;
+}
+
+.cake-price {
+  color: white;
+  margin: 10px;
+  margin-right: 25px;
+  font-size: 36px;
+}
+
+.cake-business {
+  color: red; 
+}
+
+*/

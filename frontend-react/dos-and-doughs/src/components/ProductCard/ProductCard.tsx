@@ -1,4 +1,7 @@
-import './ProductCard.css'
+import './ProductCard2.css'
+
+import AddButton from '../AddButton/AddButton'
+import RemoveButton from '../RemoveButton/RemoveButton.tsx'
 
 export type productCardProps = {
   imageUrl: string
@@ -9,6 +12,23 @@ export type productCardProps = {
 }
 
 function ProductCard(props: productCardProps) {
+  return (
+    <div className='product-card-container'>
+      <div className='product-card-description'>
+        <h1>{props.title}</h1>
+        <p>{props.subtitle}<br /><span>-&nbsp;&nbsp;{props.price}€</span></p>
+        <div className='product-button-row'>
+          <AddButton href='#' content='ADD' width='104px' shadow='left'/>
+          <RemoveButton href='#' content='REMOVE' width='124px' shadow='left'/>
+          <p>Added:&nbsp;&nbsp;<span>0</span></p>
+        </div>
+      </div>
+      <div>
+        <img className='product-img img-styling' src={props.imageUrl} alt="product image" />
+      </div>
+    </div>
+  )
+  /*
   return (
     <div className='product-card img-styling' style={{ backgroundImage: `url(${props.imageUrl})` }}>
       <div className='cake-info'>
@@ -21,6 +41,7 @@ function ProductCard(props: productCardProps) {
       </div>
     </div>
   )
+  */
 }
 
 export default ProductCard

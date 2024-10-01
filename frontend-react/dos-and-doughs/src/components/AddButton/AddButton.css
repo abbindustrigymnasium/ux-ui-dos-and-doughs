@@ -1,0 +1,14 @@
+.add-button {
+  border-radius: var(--large-border-radius) !important;
+  padding: 0.7rem 1.1rem !important;
+}
+
+.add-button > span {
+  margin-left: 2em !important;
+  text-align: start !important;
+}
+
+.add-button-deco {
+  left: -2em !important;
+  background-color: #7DD975 !important;
+}

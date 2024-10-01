@@ -18,8 +18,10 @@ function Home() {
             <Hero />
             <Checklist />
             <SpecialOffers />
-            <MaskAnimation />
-            <Testamonial />
+            <div style={{position: 'relative', zIndex: '1'}}>
+                <MaskAnimation />
+                <Testamonial />
+            </div>
             <About />
             <FAQ />
             <Follow />

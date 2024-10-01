@@ -49,6 +49,10 @@
 }
 
 @media screen and (max-width: 1500px) {
+    #what-students-say {
+        color: var(--graphics-color);
+    }
+
     .testamonial-container {
         margin-bottom: 10em;
         row-gap: 10em;
@@ -66,9 +70,5 @@
 
     .extra-quotes-container {
         display: none;
-    }
-
-    #what-students-say {
-        color: var(--graphics-color);
     }
 }

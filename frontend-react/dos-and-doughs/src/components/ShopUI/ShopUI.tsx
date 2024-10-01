@@ -48,32 +48,40 @@ function Shop() {
           <SectionDivider />
           <h1>Order anything anywhere</h1>
         </div>
-        <div className='shop-spread'>
-          <p>Added total items: 0</p>
-          <p>Cart</p>
-        </div>
-        <div className='shop-spread'>
+        <div className='shop-tabs'>
           <div>Cakes</div>
           <div className='vertical-line'></div>
           <div>Drinks</div>
           <div className='vertical-line'></div>
           <div>Snacks</div>
         </div>
-        <div>
-          Presets
-          Sort by
+        <div className='shop-extra'>
+          <div className='shop-filters'>
+            <div className='shop-filter'>Sort by</div>
+            <div style={{display: "flex", columnGap: "0.5em", alignItems: "start"}}>
+              <div className='shop-filter'>Presets</div>
+              <img src="/help-icon.svg" alt="help icon" />
+            </div>
+          </div>
+          <div className='shop-go-to-cart link'>
+            <img src="/cart-icon.svg" alt="cart icon" />
+            <span>To cart (<span>0</span> items)</span>
+          </div>
         </div>
       </div>
-      {products.map((product: productCardProps, index: number) => (
-        <ProductCard
-          key={index}
-          title={product.title}
-          price={product.price}
-          description={product.description}
-          subtitle={product.subtitle}
-          imageUrl={product.imageUrl}
-        />
-      ))}
+      <div className='products-layout'>
+        {products.map((product: productCardProps, index: number) => (
+          <ProductCard
+            key={index}
+            title={product.title}
+            price={product.price}
+            description={product.description}
+            subtitle={product.subtitle}
+            imageUrl={product.imageUrl}
+          />
+        ))}
+      </div>
+     
     </>
   )
 }
