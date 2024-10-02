@@ -7,7 +7,34 @@ import logo from "/footer-logo.svg"
 import { Link } from 'react-router-dom'
 import ScrollToHashElement from "../ScrollToHashElement";
 
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(useGSAP, ScrollTrigger);
+
 function Footer() {
+    let footer : any;
+
+    if (document.getElementById('footer')) {
+        footer = document.getElementById('footer');
+    }
+
+    useGSAP(() => {
+        setTimeout(() => {
+            gsap.fromTo(footer, {
+                opacity: 0,
+            }, {
+                opacity: 1,
+                duration: 1,
+                scrollTrigger: {
+                    trigger: footer,
+                    toggleActions: "play none none reverse",
+                },
+                ease: "power1.inOut",
+            });
+        }, 1000);
+    });
+
     return (
         <footer id="footer">
             <ScrollToHashElement />

@@ -13,6 +13,7 @@ function SpecialOffers() {
                 <SectionDivider />
                 <h1>*Special Offers*</h1>
             </div>
+            <div className='fixed-navbar-trigger'></div>
             <div className="offer-cards">
                 <div className="offer-card">
                     <div className="img-overlay">

@@ -1,23 +1,24 @@
 import { useLenis } from 'lenis/react'
-import { useEffect } from 'react'
+//import { useEffect } from 'react'
 
 function BackToTop() {
-  /*
   const lenis = useLenis()
 
   const scrollToTop = () => {
     if (lenis) {
-      lenis.scrollTo(0) // Use Lenis to scroll smoothly to the top
+      lenis.scrollTo(0)
+      //window.scrollTo(0, 0);
     }
   }
-  */
 
+  /*
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   }
+  */
 
   return (
-    <aside style={{ position: 'fixed', bottom: '1.5em', right: '2em', zIndex: "10" }} className='back-to-top'>
+    <aside style={{ position: 'fixed', bottom: '1.5em', right: '2em', zIndex: "10", opacity: "0" }} className='back-to-top'>
       <a onClick={scrollToTop} style={{ cursor: 'pointer' }}>
         <div
           style={{

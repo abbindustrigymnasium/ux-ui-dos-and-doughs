@@ -20,41 +20,7 @@ import { useEffect } from 'react'
 function App() {
   const location = useLocation();
 
-  let specialOffers : any;
-
-  if (document.getElementById('special-offers')) {
-      specialOffers = document.getElementById('special-offers')
-  }
-
   useGSAP(() => {
-    gsap.fromTo(".fixed-navbar", {
-        opacity: 0,
-        y: -20,
-    }, {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        scrollTrigger: {
-            trigger: specialOffers,
-            toggleActions: "play none none reverse",
-        },
-        ease: "power1.inOut",
-    });
-
-    gsap.fromTo(".back-to-top", {
-        opacity: 0,
-        x: 20,
-    }, {
-        opacity: 1,
-        x: 0,
-        duration: 1,
-        scrollTrigger: {
-            trigger: specialOffers,
-            toggleActions: "play none none reverse",
-        },
-        ease: "power1.inOut",
-    });
-
     let titles = gsap.utils.toArray("h1") as HTMLElement[];
 
     titles.forEach((title : HTMLElement) => {
@@ -179,19 +145,6 @@ function App() {
             },
             ease: "power1.inOut",
         });
-    });
-
-    // Footer animation
-    gsap.fromTo("#footer", {
-        opacity: 0,
-    }, {
-        opacity: 1,
-        duration: 1,
-        scrollTrigger: {
-            trigger: "#footer",
-            toggleActions: "play none none reverse",
-        },
-        ease: "power1.inOut",
     });
   });
 
