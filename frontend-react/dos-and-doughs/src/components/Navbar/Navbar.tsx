@@ -139,11 +139,11 @@ function Navbar({ currentPage }: { currentPage: string }) {
                 onMouseEnter={() => setIsMenuOpen(true)}
                 onMouseLeave={() => setIsMenuOpen(false)}
               >
-                <Link to="#special-offers" className='link'>Offers</Link>
-                <Link to="#what-students-say" className='link'>What students say</Link>
-                <Link to="#about" className='link'>About</Link>
-                <Link to="#faq-section" className='link'>FAQ</Link>
-                <Link to="#follow" className='link'>Follow Us</Link>
+                <Link to="/#special-offers" className='link'>Offers</Link>
+                <Link to="/#what-students-say" className='link'>What students say</Link>
+                <Link to="/#about" className='link'>About</Link>
+                <Link to="/#faq-section" className='link'>FAQ</Link>
+                <Link to="/#follow" className='link'>Follow Us</Link>
               </menu>
               <div
                 className='nav-home link'
