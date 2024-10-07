@@ -1,10 +1,14 @@
 import './App.css'
 
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+//import gsap from 'gsap';
+//import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
 
-gsap.registerPlugin(ScrollTrigger, useGSAP);
+import gsap from 'gsap-trial';
+import { ScrollTrigger } from 'gsap-trial/ScrollTrigger';
+import { ScrollSmoother } from 'gsap-trial/ScrollSmoother';
+
+gsap.registerPlugin(ScrollTrigger, useGSAP, ScrollSmoother);
 
 import Router from './router/Router.tsx'
 import Lenis from './components/Lenis.tsx'
@@ -15,11 +19,27 @@ import FixedNavbar from './components/Navbar/FixedNavbar.tsx'
 import BackToTop from './components/BackToTop/BackToTop.tsx'
 import Footer from './components/Footer/Footer.tsx'
 
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 
 function App() {
   const location = useLocation();
 
+  const main : any = useRef();
+  const smoother : any = useRef();
+
+  // Smooth scrolling
+  useGSAP(() => {
+    smoother.current = ScrollSmoother.create({
+        smooth: 1.6,
+        effects: true,
+        smoothTouch: 0.1,
+        ease: "expo.out",
+        //ease: "circ.out",
+        //ease: "bounce.out",
+    });
+  }, {scope: main});
+
+  // Animations
   useGSAP(() => {
     let titles = gsap.utils.toArray("h1") as HTMLElement[];
 
@@ -156,6 +176,20 @@ function App() {
 
   return (
     <>
+        <div id='smooth-wrapper' ref={main}>
+            <div id='smooth-content'>
+                <Navbar currentPage={location.pathname} />
+                <FixedNavbar />
+                <BackToTop />
+                <main>
+                    <Router />
+                </main>
+                <Footer />
+            </div>
+        </div>
+    </>
+    /*
+    <>
       <Lenis>
         <Navbar currentPage={location.pathname} />
         <FixedNavbar />
@@ -164,19 +198,6 @@ function App() {
             <Router />
         </main>
         <Footer />
-      </Lenis>
-    </>
-    /*
-    <>
-      <ScrollToTop />
-      <Lenis>
-          <Navbar currentPage={location.pathname} />
-          <FixedNavbar />
-          <BackToTop />
-          <main>
-              <Router />
-          </main>
-          <Footer />
       </Lenis>
     </>
     */
