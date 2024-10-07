@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  --background-color: #FFF8F0;
+  --background-color: #fff8f0;
   --graphics-color: #181818;
   --graphics-color-hover-light: #464545;
   --graphics-color-hover: #302f2f;
@@ -63,7 +63,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   margin: 0;
-  margin-top: 3em;
   background-color: var(--background-color);
   color: var(--graphics-color);
 

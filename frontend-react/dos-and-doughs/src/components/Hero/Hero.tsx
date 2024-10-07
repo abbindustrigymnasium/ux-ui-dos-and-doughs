@@ -6,6 +6,8 @@ import CustomButton from '../NiceButton/NiceButton.tsx'
 import VisualBox from '../VisualBox/VisualBox.tsx'
 import SectionDivider from '../SectionDivider/SectionDivider.tsx'
 
+import { Link } from 'react-router-dom'
+
 function Hero() {
   return (
     <>
@@ -26,12 +28,9 @@ function Hero() {
               convenience every student needs.
             </p>
           </div>
-          <CustomButton
-            href='#'
-            content='ORDER NOW'
-            width='200px'
-            shadow='left'
-          />
+          <div>
+            <CustomButton href='/shop' content='ORDER NOW' width='200px' shadow='left' />
+          </div>
         </div>
         <div style={{ position: 'relative' }}>
           <div className='img-container'>

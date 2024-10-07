@@ -70,7 +70,7 @@ function Checklist() {
               </p>
               <img className='check-icon' src={checkIcon} alt='check icon' />
             </div>
-            <CustomButton href='#' content='VISIT' width='140px' shadow='left' />
+            <CustomButton href='/visit' content='VISIT' width='140px' shadow='left' />
           </div>
           <hr />
         </div>
