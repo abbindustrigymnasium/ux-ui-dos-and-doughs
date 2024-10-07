@@ -1,7 +1,8 @@
-import { useState, useRef } from 'react'
+import { useState } from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
-gsap.registerPlugin(useGSAP);
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 import { Link } from 'react-router-dom'
 import ScrollToHashElement from "../ScrollToHashElement";
@@ -17,29 +18,33 @@ function Navbar({ currentPage }: { currentPage: string }) {
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
-  const navBarUlScope = useRef(null)
+  let fixedNavbarTrigger : any;
 
-  useGSAP(
-    () => {
-      gsap.fromTo(
-        'li',
-        {
-          opacity: 0,
-          y: -10,
-        },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 1,
-          stagger: 0.1,
-          ease: 'power1.inOut',
-        },
-      )
-    },
-    { scope: navBarUlScope },
-  )
+  setTimeout(() => {
+    if (document.querySelector('.fixed-navbar-trigger')) {
+      fixedNavbarTrigger = document.querySelector('.fixed-navbar-trigger');
+      //console.log(fixedNavbarTrigger);
+    }
+  }, 1000);
 
   useGSAP(() => {
+    const navbarLi = gsap.utils.toArray(".navbar-links li") as HTMLElement[];
+
+    gsap.fromTo(
+      navbarLi,
+      {
+        opacity: 0,
+        y: -10,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        stagger: 0.1,
+        ease: 'power1.inOut',
+      },
+    )
+
     gsap.fromTo(
       '.logo',
       {
@@ -82,7 +87,38 @@ function Navbar({ currentPage }: { currentPage: string }) {
         ease: 'power1.inOut',
       },
     )
-  })
+
+    setTimeout(() => {
+      gsap.fromTo(".fixed-navbar", {
+          opacity: 0,
+          y: -20,
+      }, {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          scrollTrigger: {
+              trigger: fixedNavbarTrigger,
+              toggleActions: "play none none reverse",
+              //markers: true,
+          },
+          ease: "power1.inOut",
+      });
+      
+      gsap.fromTo(".back-to-top", {
+          opacity: 0,
+          x: 20,
+      }, {
+          opacity: 1,
+          x: 0,
+          duration: 1,
+          scrollTrigger: {
+              trigger: fixedNavbarTrigger,
+              toggleActions: "play none none reverse",
+          },
+          ease: "power1.inOut",
+      });
+    }, 1000);
+  });
 
   return (
     <>
@@ -92,7 +128,7 @@ function Navbar({ currentPage }: { currentPage: string }) {
           <img className='logo' src={logo} alt='dos and doughs logo' />
         </Link>
         <div className='navbar-links'>
-          <ul ref={navBarUlScope}>
+          <ul>
             <li className='home-nav-wrapper'>
               <menu
                 className='nav-dropdown'
@@ -154,7 +190,7 @@ function Navbar({ currentPage }: { currentPage: string }) {
           <img src="/close-icon.svg" alt="close icon" className="hamburger-menu" style={{display: isMobileMenuOpen ? 'block' : 'none'}} />
         </div>
         <div className='navbar-links' style={{display: isMobileMenuOpen ? 'flex' : 'none'}}>
-          <ul ref={navBarUlScope}>
+          <ul>
             <li>
               <Link to='/' className={currentPage === '/' ? 'underline' : 'link'}>
                 Home

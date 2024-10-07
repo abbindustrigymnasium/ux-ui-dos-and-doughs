@@ -24,6 +24,7 @@
   font-size: 1rem;
   z-index: 5;
   /*border: 2px solid var(--graphics-color-hover);*/
+  opacity: 0;
 }
 
 .navbar .vertical-line {

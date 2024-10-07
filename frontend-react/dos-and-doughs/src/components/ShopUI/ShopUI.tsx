@@ -71,17 +71,16 @@ function Shop() {
       </div>
       <div className='products-layout'>
         {products.map((product: productCardProps, index: number) => (
-          <ProductCard
-            key={index}
-            title={product.title}
-            price={product.price}
-            description={product.description}
-            subtitle={product.subtitle}
-            imageUrl={product.imageUrl}
-          />
+           <ProductCard
+              key={index}
+              title={product.title}
+              price={product.price}
+              description={product.description}
+              subtitle={product.subtitle}
+              imageUrl={product.imageUrl}
+           />
         ))}
       </div>
-     
     </>
   )
 }

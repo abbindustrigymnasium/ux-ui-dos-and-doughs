@@ -3,6 +3,8 @@ import './ProductCard2.css'
 import AddButton from '../AddButton/AddButton'
 import RemoveButton from '../RemoveButton/RemoveButton.tsx'
 
+import { useState } from 'react'
+
 export type productCardProps = {
   imageUrl: string
   title: string
@@ -12,15 +14,19 @@ export type productCardProps = {
 }
 
 function ProductCard(props: productCardProps) {
+  //let numAdded : number = 0;
+
+  const [numAddedState, setNumAddedState] = useState(0);
+
   return (
     <div className='product-card-container'>
       <div className='product-card-description'>
         <h1>{props.title}</h1>
-        <p>{props.subtitle}<br /><span>-&nbsp;&nbsp;{props.price}€</span></p>
+        <p>{props.subtitle}<br /><span style={{fontWeight: "600", fontSize: "1.2rem"}}>&nbsp;&nbsp;{props.price}€</span></p>
         <div className='product-button-row'>
-          <AddButton href='#' content='ADD' width='104px' shadow='left'/>
-          <RemoveButton href='#' content='REMOVE' width='124px' shadow='left'/>
-          <p>Added:&nbsp;&nbsp;<span>0</span></p>
+          <AddButton content='ADD' width='104px' shadow='left' onclick={() => setNumAddedState(numAddedState + 1)}/>
+          <RemoveButton content='REMOVE' width='124px' shadow='left' onclick={() => setNumAddedState(numAddedState - 1)}/>
+          <p>Added:&nbsp;&nbsp;<span>{numAddedState}</span></p>
         </div>
       </div>
       <div>
