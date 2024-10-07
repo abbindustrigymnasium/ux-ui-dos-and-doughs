@@ -12,6 +12,8 @@ function Shop() {
   const [loading, setLoading] = useState<boolean>(true)
   const [error, setError] = useState<boolean>(false)
 
+  const [totalItems, setTotalItems] = useState(0)
+
   useEffect(() => {
     const fetchProducts = async () => {
       try {
@@ -32,6 +34,16 @@ function Shop() {
 
     fetchProducts()
   }, [])
+
+  // Function to increment the total number of items
+  const incrementTotalItems = () => {
+    setTotalItems(prev => prev + 1)
+  }
+
+  // Function to decrement the total number of items
+  const decrementTotalItems = () => {
+    setTotalItems(prev => (prev > 0 ? prev - 1 : 0)) // Ensure it doesn't go negative
+  }
 
   if (error) {
     return <h1 className='error'>Something went wrong</h1>
@@ -58,27 +70,31 @@ function Shop() {
         <div className='shop-extra'>
           <div className='shop-filters'>
             <div className='shop-filter'>Sort by</div>
-            <div style={{display: "flex", columnGap: "0.5em", alignItems: "start"}}>
+            <div style={{ display: 'flex', columnGap: '0.5em', alignItems: 'start' }}>
               <div className='shop-filter'>Presets</div>
-              <img src="/help-icon.svg" alt="help icon" />
+              <img src='/help-icon.svg' alt='help icon' />
             </div>
           </div>
           <div className='shop-go-to-cart link'>
-            <img src="/cart-icon.svg" alt="cart icon" />
-            <span>To cart (<span>0</span> items)</span>
+            <img src='/cart-icon.svg' alt='cart icon' />
+            <span>
+              To cart (<span>{totalItems}</span> items)
+            </span>
           </div>
         </div>
       </div>
       <div className='products-layout'>
         {products.map((product: productCardProps, index: number) => (
-           <ProductCard
-              key={index}
-              title={product.title}
-              price={product.price}
-              description={product.description}
-              subtitle={product.subtitle}
-              imageUrl={product.imageUrl}
-           />
+          <ProductCard
+            key={index}
+            title={product.title}
+            price={product.price}
+            description={product.description}
+            subtitle={product.subtitle}
+            imageUrl={product.imageUrl}
+            onIncrement={incrementTotalItems}
+            onDecrement={decrementTotalItems}
+          />
         ))}
       </div>
     </>
