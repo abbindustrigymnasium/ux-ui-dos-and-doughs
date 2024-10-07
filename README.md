@@ -26,12 +26,14 @@ cd ux-ui-dos-and-doughs
 ```bash
 cd frontend-react
 cd dos-and-doughs
+npm install
 npm run dev
 ```
 ### Building for production
 ```bash
 cd frontend-react
 cd dos-and-doughs
+npm install
 npm run build
 ```
 After running the build command, a static bundle will be available under `dist/`, which can be served using any web server of choice, for example [Nginx](https://nginx.org), [Caddy](https://caddyserver.com/) or [Apache](https://httpd.apache.org/).
