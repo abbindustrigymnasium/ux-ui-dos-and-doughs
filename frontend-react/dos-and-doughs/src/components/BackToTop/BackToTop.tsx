@@ -1,5 +1,4 @@
 import { useLenis } from 'lenis/react'
-//import { useEffect } from 'react'
 
 function BackToTop() {
   const lenis = useLenis()
@@ -18,7 +17,10 @@ function BackToTop() {
   */
 
   return (
-    <aside style={{ position: 'fixed', bottom: '1.5em', right: '2em', zIndex: "10", opacity: "0" }} className='back-to-top'>
+    <aside
+      style={{ position: 'fixed', bottom: '1.5em', right: '2em', zIndex: '10', opacity: '0' }}
+      className='back-to-top'
+    >
       <a onClick={scrollToTop} style={{ cursor: 'pointer' }}>
         <div
           style={{

@@ -6,8 +6,6 @@ import CustomButton from '../NiceButton/NiceButton.tsx'
 import VisualBox from '../VisualBox/VisualBox.tsx'
 import SectionDivider from '../SectionDivider/SectionDivider.tsx'
 
-import { Link } from 'react-router-dom'
-
 function Hero() {
   return (
     <>

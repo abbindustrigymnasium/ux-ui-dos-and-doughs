@@ -4,10 +4,6 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
 
-//import gsap from 'gsap-trial'
-//import { ScrollTrigger } from 'gsap-trial/ScrollTrigger'
-//import { ScrollSmoother } from 'gsap-trial/ScrollSmoother'
-
 gsap.registerPlugin(ScrollTrigger, useGSAP)
 
 import Router from './router/Router.tsx'
@@ -23,39 +19,6 @@ import { useEffect } from 'react'
 
 function App() {
   const location = useLocation()
-
-  //const main: any = useRef()
-  //const smoother: any = useRef()
-
-  // Smooth scrolling
-  /*
-  useGSAP(() => {
-    smoother.current = ScrollSmoother.create({
-      smooth: 1.6,
-      effects: true,
-      smoothTouch: 0.1,
-      ease: 'expo.out',
-    })
-
-    ScrollTrigger.scrollerProxy('#smooth-wrapper', {
-      scrollTop(value) {
-        return arguments.length ? smoother.current.scrollTop(value) : smoother.current.scrollTop()
-      },
-      getBoundingClientRect() {
-        return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight }
-      },
-      pinType: (document.querySelector('#smooth-wrapper') as HTMLElement).style.transform
-        ? 'transform'
-        : 'fixed',
-    })
-
-    if (smoother.current && typeof smoother.current.update === 'function') {
-      ScrollTrigger.addEventListener('refresh', () => smoother.current.update())
-    }
-
-    ScrollTrigger.refresh()
-  })
-  */
 
   // Animations
   useGSAP(() => {
@@ -213,21 +176,6 @@ function App() {
   }, [pathname])
 
   return (
-    /*
-    <>
-      <div id='smooth-wrapper' ref={main}>
-        <div id='smooth-content'>
-          <Navbar currentPage={location.pathname} />
-          <main>
-            <Router />
-          </main>
-          <Footer />
-        </div>
-      </div>
-      <FixedNavbar />
-      <BackToTop />
-    </>
-    */
     <>
       <Lenis>
         <Navbar currentPage={location.pathname} />
