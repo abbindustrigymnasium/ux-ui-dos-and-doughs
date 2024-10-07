@@ -1,6 +1,9 @@
 # Dos and Doughs
 This is a repo for the bakery UI/UX project in our 2nd year at Hitachigymnasiet. The purpose is to build a website for a fictional bakery with a specified audience.
 
+## Style guide
+A style guide is available in `STYLE.md`.
+
 ## Tech stack
 - [Figma](https://figma.com) - for prototyping and designing the user interface prior to implementing
 - [React](https://react.dev/) - a popular frontend JavaScript framework
