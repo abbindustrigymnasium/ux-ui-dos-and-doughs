@@ -174,7 +174,7 @@ function Navbar({ currentPage }: { currentPage: string }) {
           <div className='vertical-line'></div>
           <div className='account-nav'>
             <img className='account-icon' src={accountIcon} alt='account icon' />
-            <Link to='/account' className={currentPage === '/account' ? 'underline link' : 'link'}>
+            <Link to='/account/login' className={currentPage.includes('/account') ? 'underline link' : 'link'}>
               Account
             </Link>
           </div>
@@ -209,7 +209,7 @@ function Navbar({ currentPage }: { currentPage: string }) {
           </ul>
           <div className='account-nav'>
             <img className='account-icon' src={accountIcon} alt='account icon' />
-            <Link to='/account' className={currentPage === '/account' ? 'underline link' : 'link'}>
+            <Link to='/account/login' className={currentPage.includes('/account') ? 'underline link' : 'link'}>
               Account
             </Link>
           </div>

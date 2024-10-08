@@ -43,7 +43,7 @@ function Footer() {
                     <img className="footer-logo" src={logo} alt="logo" />
                     <div>
                         <p style={{marginBottom: "1em"}}>Fuel Your Studies with Fresh Sweets</p>
-                        <CustomButton width="120px" content="Visit" inv={true} />
+                        <CustomButton href="/visit" width="120px" content="Visit" inv={true} />
                     </div>
                 </div>
                 <div className="vertical-line"></div>

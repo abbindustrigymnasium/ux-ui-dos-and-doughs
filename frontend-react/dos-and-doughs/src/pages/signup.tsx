@@ -1,15 +1,15 @@
-import Login from "../components/Login/Login"
+import Signup from "../components/Login/Signup"
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 
-function Account() {
+function SignupPage() {
     return (
         <HelmetProvider>
             <Helmet>
-                <title>Do's & Doughs | Account</title>
+                <title>Do's & Doughs | Signup</title>
             </Helmet>
-            <Login />
+            <Signup />
         </HelmetProvider>
     )
 }
 
-export default Account
+export default SignupPage
