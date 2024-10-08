@@ -20,7 +20,7 @@ function SpecialOffers() {
             <p>
               Sign up and get <span className='bold'>50% off</span> your first order.
             </p>
-            <CustomButton href='/account' content='JOIN' width='160px' shadow='left' />
+            <CustomButton href='/account/signup' content='JOIN' width='160px' shadow='left' />
           </div>
           <div className='img-container'>
             <img className='offer-img img-styling' src={homeCake1} alt='' />

@@ -71,7 +71,7 @@ function FixedNavbar() {
           <div className='vertical-line'></div>
           <div className='account-nav'>
             <img className='account-icon' src={accountIcon} alt='account icon' />
-            <Link to={'/account'} className='link-inv'>
+            <Link to={'/account/login'} className='link-inv'>
               Account
             </Link>
           </div>
