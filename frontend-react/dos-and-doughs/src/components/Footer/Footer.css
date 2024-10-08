@@ -1,0 +1,132 @@
+#footer {
+    width: 100%;
+    height: 100%;
+    background-color: var(--graphics-color);
+    color: var(--background-color);
+    padding-inline: 4em;
+    padding-block: 3em;
+    border-top-left-radius: var(--large-border-radius);
+    border-top-right-radius: var(--large-border-radius);
+}
+
+#footer .vertical-line {
+    height: 240px;
+}
+
+#footer ::selection {
+    background-color: var(--background-color);
+    color: var(--graphics-color);
+}
+
+.footer-logo {
+    width: 240px;
+}
+
+#footer hr, #footer .vertical-line {
+    background-color: var(--graphics-color-hover);
+}
+
+#footer h2 {
+    font-size: 1.8rem;
+    /*font-family: "Redaction", serif;*/
+    font-weight: 700;
+}
+
+#footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer-layout {
+    height: 90%;
+    position: relative;
+    display: flex;
+    padding-bottom: 3em;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 3em;
+}
+
+.footer-left-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4em;
+}
+
+.footer-middle-content {
+    display: flex;
+    flex-direction: row;
+    column-gap: 4em;
+}
+
+.footer-right-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+}
+
+.footer-right-content form {
+    width: 100%;
+    padding: 1em;
+    border-radius: var(--large-border-radius);
+    border: 3px solid var(--graphics-color-hover);
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+.footer-right-content form input {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 0.9rem;
+    background-color: unset;
+    width: 100%;
+}
+
+.footer-right-content input ::placeholder {
+    color: var(--graphics-color-light);
+}
+
+
+.footer-right-content input:focus {
+    color: var(--background-color);
+}
+
+.footer-right-content input:valid {
+    color: var(--background-color);
+}
+
+.footer-right-content button {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 0.9rem;
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background-color: var(--graphics-color-hover);
+    color: var(--background-color);
+    border: none;
+    border-radius: var(--large-border-radius);
+    padding-inline: 2em;
+    cursor: pointer;
+    transition: background-color 200ms ease-in-out;
+}
+
+.footer-right-content button:hover {
+    background-color: var(--graphics-color-hover-light);
+}
+
+.copyright-notice {
+    text-align: center;
+    margin-top: 1.5em;
+    font-size: 0.9rem;
+    color: var(--graphics-color-hover-light);
+    font-weight: 600;
+    opacity: 1 !important /* Override scrolltrigger animation */;
+}
+
+@media screen and (max-width: 700px) {
+    #footer .vertical-line {
+        display: none;
+    }
+}

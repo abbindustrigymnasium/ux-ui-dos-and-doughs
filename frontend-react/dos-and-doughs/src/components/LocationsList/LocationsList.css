@@ -1,0 +1,24 @@
+.locations-list {
+  margin-top: 6em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 3em;
+}
+
+.locations-list ul {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+}
+
+.locations-list li {
+  width: 400px;
+  padding-inline: 2em;
+  padding-block: 0.9em;
+  border: 2px solid var(--graphics-color-light);
+  border-radius: var(--large-border-radius);
+  font-size: 0.9em;
+  font-family: 'Public Sans', sans-serif;
+}
