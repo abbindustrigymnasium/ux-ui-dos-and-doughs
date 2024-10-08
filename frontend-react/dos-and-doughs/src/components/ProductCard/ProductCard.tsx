@@ -34,6 +34,7 @@ function ProductCard(props: productCardProps) {
         <p>
           {props.subtitle}
           <br />
+          <br />
           <span style={{ fontWeight: '600', fontSize: '1.2rem' }}>&nbsp;&nbsp;{props.price}€</span>
         </p>
         <div className='product-button-row'>
