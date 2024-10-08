@@ -2,7 +2,7 @@
 This is a repo for the bakery UI/UX project in our 2nd year at Hitachigymnasiet. The purpose is to build a website for a fictional bakery with a specified audience.
 
 ## Style guide
-A style guide is available in `STYLE.md`.
+A style guide is available in `STYLE.md`. Further styling is available in [https://www.figma.com/design/DD84rVFXd5ACMxYxrlw3cm/DO'S-%26-DOUGHS?node-id=211-68&t=ET9e2NgVaCdhPYKF-1](https://www.figma.com/design/DD84rVFXd5ACMxYxrlw3cm/DO'S-%26-DOUGHS?node-id=211-68&t=ET9e2NgVaCdhPYKF-1)
 
 ## Tech stack
 - [Figma](https://figma.com) - for prototyping and designing the user interface prior to implementing
