@@ -38,7 +38,7 @@ function SpecialOffers() {
       </div>
       <div className='offer-shoplink'>
         <h2>View our full shop to see what we offer.</h2>
-        <CustomButton href='#' content='SHOP' width='140px' shadow='left' />
+        <CustomButton href='/shop' content='SHOP' width='140px' shadow='left' />
       </div>
     </section>
   )
