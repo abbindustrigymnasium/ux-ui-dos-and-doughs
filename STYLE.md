@@ -5,6 +5,7 @@ offering a reliable place for students to get work done. Focusing on comfort,
 accessibility (geographical location), and convenience is key.
 
 **The content here is heavily based on the visual examples in Figma.**
+**Figma link:** [https://www.figma.com/design/DD84rVFXd5ACMxYxrlw3cm/DO'S-%26-DOUGHS?node-id=211-68&t=ET9e2NgVaCdhPYKF-1](https://www.figma.com/design/DD84rVFXd5ACMxYxrlw3cm/DO'S-%26-DOUGHS?node-id=211-68&t=ET9e2NgVaCdhPYKF-1)
 
 1. Logo
     - The logo may used with or without text.
