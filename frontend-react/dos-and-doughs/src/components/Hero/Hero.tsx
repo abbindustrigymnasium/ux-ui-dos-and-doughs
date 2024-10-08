@@ -2,7 +2,7 @@ import './Hero.css'
 
 const heroImg = '/hero-img.png'
 
-import CustomButton from '../NiceButton/NiceButton.tsx'
+import CustomButton from '../Button/Button.tsx'
 import VisualBox from '../VisualBox/VisualBox.tsx'
 import SectionDivider from '../SectionDivider/SectionDivider.tsx'
 

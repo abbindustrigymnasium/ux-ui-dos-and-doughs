@@ -16,7 +16,7 @@ accessibility (geographical location), and convenience is key.
         - `#FFF8F0`, a slighly warmer white color for the page
         - `#EEE8E1`, for visual enhancements and/or shadows where contrast is not critical
         - `#C8C4BF`, for augmenting visual elements
-        - `#EE5E4B`, a simple red color for indicating important information and/or errors
+        - `#5BE262`, a simple green color for indicating important information and/or errors
     - The website emphasizes images as a source of color in order to make them stand out and as such other colors should be avoided.
 3. Typography
     - For headers, we use the serif font *Redaction*. Headers are short texts which need to stand out. The base size of headers are 3rem, or approximately 48px, but rem is preferred. Headers must have good contrast.

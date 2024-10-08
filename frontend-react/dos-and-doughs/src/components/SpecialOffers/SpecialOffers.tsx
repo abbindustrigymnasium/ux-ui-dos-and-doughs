@@ -4,7 +4,7 @@ const homeCake1 = '/offers-cake-1.png'
 const homeCake2 = '/offers-cake-2.png'
 
 import SectionDivider from '../SectionDivider/SectionDivider.tsx'
-import CustomButton from '../NiceButton/NiceButton.tsx'
+import CustomButton from '../Button/Button.tsx'
 
 function SpecialOffers() {
   return (

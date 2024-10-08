@@ -1,8 +1,8 @@
-import './NiceButton.css'
+import './Button.css'
 
 import { Link } from 'react-router-dom'
 
-function CustomButton(p: any) {
+function Button(p: any) {
   return (
     <Link to={p.href} style={{width: "min-content"}}>
       <button
@@ -23,4 +23,4 @@ function CustomButton(p: any) {
   )
 }
 
-export default CustomButton
+export default Button
